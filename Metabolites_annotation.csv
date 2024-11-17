@@ -1,0 +1,791 @@
+Super pathway,Sub pathway,Metabolite,HMDB,KEGG
+Amino Acid,Glutamate Metabolism,S-1-pyrroline-5-carboxylate,HMDB0001301,C04322
+Amino Acid,Polyamine Metabolism,spermidine,HMDB0001257,C00315
+Cofactors and Vitamins,Nicotinate and Nicotinamide Metabolism,1-methylnicotinamide,HMDB0000699,C02918
+Energy,TCA Cycle,alpha-ketoglutarate,HMDB0000208,C00026
+Amino Acid,Tryptophan Metabolism,kynurenate,HMDB0000715,C01717
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",3-hydroxyisobutyrate,"HMDB0000023,HMDB0000336","C01188,C06001"
+Lipid,Mevalonate Metabolism,3-hydroxy-3-methylglutarate,HMDB0000355,C03761
+Amino Acid,Tyrosine Metabolism,homovanillate (HVA),HMDB0000118,C05582
+Carbohydrate,"Glycolysis, Gluconeogenesis, and Pyruvate Metabolism",3-phosphoglycerate,HMDB0000807,C00597
+Lipid,Primary Bile Acid Metabolism,cholate,HMDB0000619,C00695
+Amino Acid,Phenylalanine Metabolism,4-hydroxyphenylacetate,HMDB0000020,C00642
+Nucleotide,"Pyrimidine Metabolism, Thymine containing","5,6-dihydrothymine",HMDB0000079,C00906
+Nucleotide,"Purine Metabolism, (Hypo)Xanthine/Inosine containing",hypoxanthine,HMDB0000157,C00262
+Lipid,"Fatty Acid, Dihydroxy","9,10-DiHOME",HMDB0004704,C14828
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),linoleate (18:2n6),"HMDB0006270,HMDB0000673",C01595
+Lipid,Medium Chain Fatty Acid,laurate (12:0),HMDB0000638,C02679
+Cofactors and Vitamins,Nicotinate and Nicotinamide Metabolism,quinolinate,HMDB0000232,C03722
+Amino Acid,Lysine Metabolism,"N6,N6,N6-trimethyllysine",HMDB0001325,C03793
+Amino Acid,Polyamine Metabolism,N-acetylputrescine,HMDB0002064,C02714
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",N-formylmethionine,HMDB0001015,C03145
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",S-adenosylhomocysteine (SAH),HMDB00939,C00021
+Nucleotide,"Purine Metabolism, Adenine containing","adenosine 3',5'-cyclic monophosphate (cAMP)",HMDB0000058,C00575
+Nucleotide,"Purine Metabolism, Adenine containing",adenosine 5'-monophosphate (AMP),HMDB0000045,C00020
+Amino Acid,Polyamine Metabolism,5-methylthioadenosine (MTA),HMDB0001173,C00170
+Nucleotide,"Purine Metabolism, Adenine containing",N6-methyladenosine,HMDB0004044,Not available
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),arachidonate (20:4n6),HMDB0001043,C00219
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,arginine,HMDB0000517,C00062
+Amino Acid,Alanine and Aspartate Metabolism,aspartate,HMDB0000191,C00049
+Amino Acid,Phenylalanine Metabolism,2-hydroxyphenylacetate,HMDB0000669,C05852
+Amino Acid,Tyrosine Metabolism,3-(4-hydroxyphenyl)lactate,HMDB0000755,C03672
+Amino Acid,Phenylalanine Metabolism,phenylpyruvate,HMDB0000205,C00166
+Nucleotide,"Pyrimidine Metabolism, Uracil containing",beta-alanine,HMDB0000056,C00099
+Cofactors and Vitamins,Hemoglobin and Porphyrin Metabolism,biliverdin,HMDB0001008,C00500
+Energy,TCA Cycle,succinate,HMDB0000254,C00042
+Lipid,Ketone Bodies,3-hydroxybutyrate (BHBA),"HMDB0000442,HMDB0000357,HMDB0000011","C03197,C01089"
+Lipid,Sterol,cholesterol,HMDB0000067,C00187
+Lipid,Corticosteroids,corticosterone,HMDB0001547,C02140
+Lipid,Corticosteroids,cortisone,HMDB0002802,C00762
+Amino Acid,Creatine Metabolism,creatinine,HMDB0000562,C00791
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",cystine,HMDB0000192,C00491
+Lipid,Sphingosines,sphingosine,HMDB0000252,C00319
+Lipid,Secondary Bile Acid Metabolism,deoxycholate,HMDB0000626,C04483
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",cystathionine,HMDB0000099,C02291
+Lipid,Sphingolipid Synthesis,sphinganine,HMDB0000269,C00836
+Cofactors and Vitamins,Riboflavin Metabolism,flavin adenine dinucleotide (FAD),HMDB0001248,C00016
+Energy,TCA Cycle,fumarate,HMDB0000134,C00122
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamylglutamate,HMDB0011737,C05282
+Lipid,"Fatty Acid, Dicarboxylate",glutarate (C5-DC),HMDB0000661,C00489
+Amino Acid,"Glycine, Serine and Threonine Metabolism",glycine,HMDB0000123,C00037
+Lipid,Primary Bile Acid Metabolism,glycocholate,HMDB0000138,C01921
+Amino Acid,Creatine Metabolism,guanidinoacetate,HMDB0000128,C00581
+Amino Acid,Histidine Metabolism,histidine,HMDB0000177,C00135
+Lipid,Corticosteroids,cortisol,HMDB0000063,C00735
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",hypotaurine,HMDB0000965,C00519
+Nucleotide,"Purine Metabolism, (Hypo)Xanthine/Inosine containing",inosine,HMDB0000195,C00294
+Lipid,Inositol Metabolism,myo-inositol,HMDB0000211,C00137
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",isoleucine,HMDB0000172,"C06418,C00407,C16424"
+Amino Acid,Lysine Metabolism,2-aminoadipate,HMDB0000510,C00956
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,citrulline,HMDB0000904,C00327
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",leucine,HMDB0000687,C00123
+Amino Acid,Lysine Metabolism,lysine,HMDB0003405,"C00739,C00047"
+Energy,TCA Cycle,malate,"HMDB0031518,HMDB0000156,HMDB0000744","C00149,C00711,C00497"
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",methionine,HMDB0000696,C00073
+Lipid,Long Chain Saturated Fatty Acid,palmitate (16:0),HMDB0000220,C00249
+Cofactors and Vitamins,Nicotinate and Nicotinamide Metabolism,nicotinamide,HMDB0001406,C00153
+Lipid,Long Chain Saturated Fatty Acid,stearate (18:0),HMDB0000827,C01530
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,ornithine,HMDB0000214,C00077
+Nucleotide,"Pyrimidine Metabolism, Orotate containing",orotate,HMDB0000226,C00295
+Lipid,Long Chain Monounsaturated Fatty Acid,palmitoleate (16:1n7),HMDB0003229,C08362
+Amino Acid,Phenylalanine Metabolism,phenylalanine,HMDB0000159,C00079
+Energy,Oxidative Phosphorylation,phosphate,HMDB0001429,C00009
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,proline,"HMDB0000162,HMDB0003411","C00148,C000763"
+Carbohydrate,"Glycolysis, Gluconeogenesis, and Pyruvate Metabolism",lactate,HMDB0000190,C00186
+Cofactors and Vitamins,Vitamin B6 Metabolism,pyridoxal,HMDB0001545,C00250
+Cofactors and Vitamins,Vitamin A Metabolism,retinol (Vitamin A),HMDB0000305,C00473
+Amino Acid,"Glycine, Serine and Threonine Metabolism",serine,HMDB0000187,C00065
+Amino Acid,Tryptophan Metabolism,serotonin,HMDB0000259,C00780
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",taurine,HMDB0000251,C00245
+Lipid,Long Chain Saturated Fatty Acid,myristate (14:0),HMDB0000806,C06424
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,urea,HMDB0000294,C00086
+Nucleotide,"Pyrimidine Metabolism, Uracil containing",uridine,HMDB0000296,C00299
+Nucleotide,"Pyrimidine Metabolism, Uracil containing",2'-deoxyuridine,HMDB0000012,C00526
+Amino Acid,Histidine Metabolism,trans-urocanate,HMDB0000301,C00785
+Amino Acid,Glutamate Metabolism,glutamate,HMDB0000148,"C00025,C00217"
+Amino Acid,Glutamate Metabolism,glutamine,HMDB0000641,C00064
+Amino Acid,"Glycine, Serine and Threonine Metabolism",threonine,HMDB0000167,C00188
+Amino Acid,Tryptophan Metabolism,tryptophan,HMDB0000929,C00078
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",valine,HMDB0000883,C00183
+Carbohydrate,"Glycolysis, Gluconeogenesis, and Pyruvate Metabolism",glucose,HMDB0000122,C00031
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",alpha-ketobutyrate,HMDB0000005,C00109
+Amino Acid,"Glycine, Serine and Threonine Metabolism",betaine,HMDB0000043,C00719
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",cysteine,HMDB0000574,C00097
+Carbohydrate,"Fructose, Mannose and Galactose Metabolism",mannose,HMDB0000169,"C00159,C02209,C00936"
+Amino Acid,"Glycine, Serine and Threonine Metabolism",dimethylglycine,HMDB0000092,C03626
+Amino Acid,Alanine and Aspartate Metabolism,alanine,HMDB0000161,C00041
+Amino Acid,Tyrosine Metabolism,tyrosine,HMDB0000158,C00082
+Nucleotide,"Pyrimidine Metabolism, Uracil containing",pseudouridine,HMDB0000767,C02067
+Carbohydrate,"Glycolysis, Gluconeogenesis, and Pyruvate Metabolism",pyruvate,HMDB0000243,C00022
+Nucleotide,"Pyrimidine Metabolism, Uracil containing",uracil,HMDB0000300,C00106
+Carbohydrate,Pentose Metabolism,xylose,HMDB0000098,C00181
+Nucleotide,"Pyrimidine Metabolism, Cytidine containing",cytidine,HMDB0000089,C00475
+Carbohydrate,Pentose Metabolism,arabinose,HMDB0029942,C00216
+Carbohydrate,"Fructose, Mannose and Galactose Metabolism",fructose,HMDB0000660,C00095
+Nucleotide,"Purine Metabolism, Adenine containing",adenine,HMDB0000034,C00147
+Nucleotide,"Pyrimidine Metabolism, Cytidine containing",cytosine,HMDB0000630,C00380
+Lipid,Medium Chain Fatty Acid,caprate (10:0),HMDB0000511,C01571
+Lipid,Long Chain Saturated Fatty Acid,margarate (17:0),HMDB0002259,Not available
+Lipid,Long Chain Saturated Fatty Acid,nonadecanoate (19:0),HMDB0000772,C16535
+Lipid,Long Chain Saturated Fatty Acid,arachidate (20:0),HMDB0002212,C06425
+Amino Acid,Alanine and Aspartate Metabolism,asparagine,HMDB0000168,C00152
+Lipid,Dihydroceramides,N-stearoyl-sphinganine (d18:0/18:0)*,Not available,Not available
+Nucleotide,"Pyrimidine Metabolism, Orotate containing",dihydroorotate,HMDB03349,C00337
+Lipid,Medium Chain Fatty Acid,heptanoate (7:0),HMDB0000666,C17714
+Lipid,Medium Chain Fatty Acid,caproate (6:0),HMDB0000535,C01585
+Lipid,Medium Chain Fatty Acid,caprylate (8:0),HMDB0000482,C06423
+Carbohydrate,Disaccharides and Oligosaccharides,sucrose,HMDB0000258,C00089
+Lipid,Long Chain Saturated Fatty Acid,pentadecanoate (15:0),HMDB0000826,C16537
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,trans-4-hydroxyproline,HMDB0000725,C01157
+Nucleotide,"Purine Metabolism, (Hypo)Xanthine/Inosine containing",allantoin,HMDB0000462,"C02348,C01551,C02350"
+Nucleotide,"Purine Metabolism, (Hypo)Xanthine/Inosine containing",xanthine,HMDB0000292,C00385
+Amino Acid,Glutathione Metabolism,5-oxoproline,HMDB0000267,"C02237,C01879"
+Amino Acid,Tryptophan Metabolism,picolinate,HMDB0002243,C10164
+Amino Acid,"Glycine, Serine and Threonine Metabolism",sarcosine,HMDB0000271,C00213
+Cofactors and Vitamins,Pantothenate and CoA Metabolism,pantothenate,HMDB0000210,C00864
+Amino Acid,Lysine Metabolism,pipecolate,Not available,Not available
+Lipid,Phospholipid Metabolism,phosphoethanolamine,HMDB0000224,C00346
+Carbohydrate,"Glycolysis, Gluconeogenesis, and Pyruvate Metabolism",glycerate,"HMDB0000139,HMDB0006372",C00258
+Nucleotide,"Pyrimidine Metabolism, Uracil containing",3-ureidopropionate,HMDB0000026,C02642
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",N-acetylleucine,HMDB0011756,C02710
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",N-acetylmethionine,HMDB0011745,C02712
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",N-acetylvaline,HMDB0011757,Not available
+Lipid,Long Chain Monounsaturated Fatty Acid,erucate (22:1n9),HMDB0002068,C08316
+Cofactors and Vitamins,Hemoglobin and Porphyrin Metabolism,"bilirubin (Z,Z)",HMDB0000054,C00486
+Amino Acid,Tyrosine Metabolism,thyroxine,HMDB0000248,C01829
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamyltyrosine,HMDB0011741,Not available
+Cofactors and Vitamins,Tocopherol Metabolism,alpha-tocopherol,HMDB0001893,C02477
+Amino Acid,Alanine and Aspartate Metabolism,N-acetylalanine,HMDB0000766,C02847
+Amino Acid,Tyrosine Metabolism,vanillylmandelate (VMA),HMDB0000291,C05584
+Amino Acid,Polyamine Metabolism,4-acetamidobutanoate,HMDB0003681,C02946
+Nucleotide,"Pyrimidine Metabolism, Thymine containing",3-aminoisobutyrate,HMDB0002166,C05145
+Lipid,Primary Bile Acid Metabolism,chenodeoxycholate,HMDB0000518,C02528
+Energy,TCA Cycle,citrate,HMDB0000094,C00158
+Nucleotide,"Pyrimidine Metabolism, Uracil containing","5,6-dihydrouracil",HMDB0000076,C00429
+Amino Acid,Glutathione Metabolism,2-aminobutyrate,HMDB0000452,C02356
+Nucleotide,"Purine Metabolism, (Hypo)Xanthine/Inosine containing",urate,HMDB0000289,C00366
+Lipid,Secondary Bile Acid Metabolism,ursodeoxycholate,HMDB0000946,C07880
+Lipid,Endocannabinoid,oleoyl ethanolamide,HMDB0002088,Not available
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamylglutamine,HMDB0011738,C05283
+Amino Acid,Tyrosine Metabolism,4-hydroxyphenylpyruvate,HMDB0000707,C01179
+Lipid,Short Chain Fatty Acid,butyrate/isobutyrate (4:0),HMDB0000039,C00246
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",tigloylglycine,HMDB0000959,Not available
+Carbohydrate,Aminosugar Metabolism,N-acetylneuraminate,HMDB0000230,C00270
+Carbohydrate,Aminosugar Metabolism,N-acetylglucosaminylasparagine,HMDB0000489,C04540
+Lipid,Ketone Bodies,acetoacetate,HMDB0000060,C00164
+Amino Acid,Creatine Metabolism,creatine,HMDB0000064,C00300
+Amino Acid,Glutathione Metabolism,"cys-gly, oxidized",Not available,Not available
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),dihomo-linoleate (20:2n6),HMDB0005060,C16525
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamylhistidine,HMDB0029151,Not available
+Lipid,"Fatty Acid, Monohydroxy",2-hydroxystearate,HMDB0062549,"C03042,C03045"
+Nucleotide,"Purine Metabolism, Adenine containing",N1-methyladenosine,HMDB0003331,C02494
+Lipid,Glycerolipid Metabolism,glycerol,HMDB0000131,C00116
+Lipid,Phospholipid Metabolism,choline,HMDB0000097,C00114
+Amino Acid,Tryptophan Metabolism,anthranilate,HMDB0001123,C00108
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamylleucine,HMDB0011171,Not available
+Amino Acid,Tyrosine Metabolism,3-methoxytyrosine,HMDB0001434,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",beta-hydroxyisovalerate,HMDB0000754,Not available
+Lipid,Ceramides,N-palmitoyl-sphingosine (d18:1/16:0),HMDB0004949,Not available
+Lipid,Phosphatidylethanolamine (PE),1-palmitoyl-2-oleoyl-GPE (16:0/18:1),HMDB0005320,Not available
+Lipid,Phosphatidylinositol (PI),1-palmitoyl-2-linoleoyl-GPI (16:0/18:2),HMDB0009784,Not available
+Lipid,Phosphatidylcholine (PC),1-palmitoyl-2-linoleoyl-GPC (16:0/18:2),HMDB0007973,Not available
+Lipid,Sphingomyelins,stearoyl sphingomyelin (d18:1/18:0),HMDB0001348,C00550
+Lipid,Phosphatidylcholine (PC),1-palmitoyl-2-oleoyl-GPC (16:0/18:1),HMDB0007972,C13875
+Lipid,Ceramides,N-stearoyl-sphingosine (d18:1/18:0)*,HMDB0004950,Not available
+Lipid,Primary Bile Acid Metabolism,glycochenodeoxycholate,HMDB0000637,C05466
+Lipid,Primary Bile Acid Metabolism,taurochenodeoxycholate,HMDB0000951,C05465
+Lipid,Primary Bile Acid Metabolism,taurocholate,HMDB0000036,C05122
+Lipid,Secondary Bile Acid Metabolism,taurodeoxycholate,HMDB0000896,C05463
+Lipid,"Fatty Acid, Dicarboxylate",azelate (C9-DC),HMDB0000784,C08261
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),eicosapentaenoate (EPA; 20:5n3),HMDB0001999,C06428
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",methylsuccinate,HMDB0001844,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",ethylmalonate,HMDB0000622,Not available
+Lipid,Carnitine Metabolism,carnitine,HMDB0000062,"C00487,C00308"
+Amino Acid,Phenylalanine Metabolism,phenylacetate,HMDB0000209,C07086
+Amino Acid,Tryptophan Metabolism,xanthurenate,HMDB0000881,C02470
+Lipid,"Fatty Acid, Dicarboxylate",suberate (C8-DC),HMDB0000893,C08278
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",3-methyl-2-oxovalerate,HMDB0000491,"C03465,C06008,C00671"
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",methionine sulfoxide,HMDB0002005,C02989
+Amino Acid,Histidine Metabolism,3-methylhistidine,HMDB0000479,C01152
+Amino Acid,Lysine Metabolism,5-hydroxylysine,HMDB0000450,C16741
+Amino Acid,Guanidino and Acetamido Metabolism,4-guanidinobutanoate,HMDB0003464,C01035
+Carbohydrate,Aminosugar Metabolism,glucuronate,HMDB0000127,C16245
+Lipid,Glycerolipid Metabolism,glycerol 3-phosphate,HMDB0000126,C0093
+Amino Acid,Histidine Metabolism,imidazole lactate,HMDB0002320,C05568
+Amino Acid,Tryptophan Metabolism,kynurenine,HMDB0000684,C00328
+Lipid,Phospholipid Metabolism,glycerophosphorylcholine (GPC),HMDB0000086,C00670
+Amino Acid,Glutamate Metabolism,N-acetylglutamate,HMDB0001138,C00624
+Nucleotide,"Purine Metabolism, (Hypo)Xanthine/Inosine containing",xanthosine,HMDB0000299,C01762
+Carbohydrate,Pentose Metabolism,ribitol,"HMDB0002917,HMDB0001851,HMDB0000568,HMDB0000508","C00379,C01904,C00474,C00532"
+Lipid,Secondary Bile Acid Metabolism,glycodeoxycholate,HMDB00631,C05464
+Amino Acid,Tryptophan Metabolism,indolelactate,HMDB0000671,C02043
+Amino Acid,Tryptophan Metabolism,3-indoxyl sulfate,HMDB0000682,Not available
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamylphenylalanine,HMDB0000594,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",4-methyl-2-oxopentanoate,HMDB0000695,C00233
+Carbohydrate,"Glycolysis, Gluconeogenesis, and Pyruvate Metabolism","1,5-anhydroglucitol (1,5-AG)",HMDB0002712,C07326
+Lipid,Phosphatidylinositol (PI),1-stearoyl-2-arachidonoyl-GPI (18:0/20:4),HMDB0009815,Not available
+Lipid,Sphingosines,sphingosine 1-phosphate,HMDB0000277,C06124
+Lipid,Phosphatidylserine (PS),1-stearoyl-2-oleoyl-GPS (18:0/18:1),HMDB0010163,Not available
+Lipid,Lysophospholipid,1-stearoyl-GPI (18:0),HMDB0240261,Not available
+Lipid,Phosphatidylcholine (PC),"1,2-dipalmitoyl-GPC (16:0/16:0)",HMDB0000564,D03585
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),docosahexaenoate (DHA; 22:6n3),HMDB0002183,C06429
+Lipid,Phosphatidylcholine (PC),1-myristoyl-2-palmitoyl-GPC (14:0/16:0),HMDB0007869,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",alpha-hydroxyisocaproate,"HMDB0000665,HMDB00746,HMDB0000624",C03264
+Lipid,"Fatty Acid, Dicarboxylate",maleate,HMDB0000176,C01384
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",isovalerate (i5:0),HMDB0000718,C08262
+Lipid,"Fatty Acid, Monohydroxy",2-hydroxyoctanoate,HMDB0002264,Not available
+Lipid,"Fatty Acid, Monohydroxy",3-hydroxyoctanoate,HMDB0001954,C20793
+Amino Acid,Phenylalanine Metabolism,phenyllactate (PLA),"HMDB0000779,HMDB0000563",C05607
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Long Chain Saturated)",palmitoylcarnitine (C16),HMDB0000222,C02990
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Medium Chain)",hexanoylcarnitine (C6),HMDB0000756,Not available
+Amino Acid,Alanine and Aspartate Metabolism,N-acetylaspartate (NAA),HMDB0000812,C01042
+Lipid,Androgenic Steroids,dehydroepiandrosterone sulfate (DHEA-S),HMDB0001032,C04555
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Short Chain)",acetylcarnitine (C2),HMDB0000201,C02571
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",cysteine s-sulfate,HMDB0000731,C05824
+Cofactors and Vitamins,Ascorbate and Aldarate Metabolism,oxalate (ethanedioate),HMDB0002329,C00209
+Lipid,Monoacylglycerol,1-oleoylglycerol (18:1),HMDB0011567,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",3-methyl-2-oxobutyrate,HMDB0000019,C00141
+Lipid,Monoacylglycerol,2-oleoylglycerol (18:1),HMDB0011537,Not available
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,homoarginine,HMDB0000670,C01924
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,homocitrulline,HMDB0000679,C02427
+Lipid,Monoacylglycerol,2-linoleoylglycerol (18:2),HMDB0011538,Not available
+Lipid,"Fatty Acid, Monohydroxy",3-hydroxydecanoate,HMDB0002203,Not available
+Amino Acid,Glutamate Metabolism,citramalate,HMDB0000426,C00815
+Amino Acid,"Glycine, Serine and Threonine Metabolism",N-acetylglycine,HMDB0000532,Not available
+Carbohydrate,Pentose Metabolism,ribonate,HMDB0000867,C01685
+Cofactors and Vitamins,Ascorbate and Aldarate Metabolism,threonate,"HMDB0062620,HMDB0000943",C01620
+Carbohydrate,"Fructose, Mannose and Galactose Metabolism",galactonate,HMDB0000565,"C00880,C15930"
+Lipid,Sterol,beta-sitosterol,HMDB0000852,C01753
+Amino Acid,Tryptophan Metabolism,indoleacetate,HMDB0000197,C00954
+Lipid,Monoacylglycerol,1-linoleoylglycerol (18:2),HMDB0011568,Not available
+Amino Acid,Histidine Metabolism,1-methylhistidine,HMDB0000001,C01152
+Lipid,Fatty Acid Metabolism (also BCAA Metabolism),butyrylcarnitine (C4),HMDB0002013,C02862
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",isobutyrylcarnitine (C4),HMDB0000736,Not available
+Lipid,Secondary Bile Acid Metabolism,glycolithocholate,HMDB00698,C15557
+Lipid,Androgenic Steroids,androsterone sulfate,HMDB0002759,Not available
+Amino Acid,Tryptophan Metabolism,indolepropionate,HMDB0002302,Not available
+Cofactors and Vitamins,Nicotinate and Nicotinamide Metabolism,trigonelline (N'-methylnicotinate),HMDB0000875,C01004
+Lipid,"Fatty Acid, Dicarboxylate",dodecanedioate (C12-DC),HMDB0000623,C02678
+Amino Acid,Tyrosine Metabolism,N-acetyltyrosine,HMDB0000866,Not available
+Lipid,"Fatty Acid, Monohydroxy",3-hydroxylaurate,HMDB0000387,Not available
+Cofactors and Vitamins,Vitamin B6 Metabolism,pyridoxate,HMDB0000017,C00847
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamylvaline,HMDB0011172,Not available
+Lipid,"Fatty Acid, Monohydroxy",3-hydroxysebacate,HMDB0000350,Not available
+Lipid,"Fatty Acid, Monohydroxy",5-hydroxyhexanoate,"HMDB0000409,HMDB0000525",Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",3-methylcrotonylglycine,HMDB0000459,C20828
+Lipid,Fatty Acid Metabolism (also BCAA Metabolism),propionylglycine,HMDB0000783,Not available
+Lipid,Fatty Acid Metabolism (also BCAA Metabolism),butyrylglycine,HMDB0000808,Not available
+Lipid,Fatty Acid Metabolism (also BCAA Metabolism),propionylcarnitine (C3),HMDB0000824,C03017
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,pro-hydroxy-pro,HMDB0006695,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",3-hydroxy-2-ethylpropionate,HMDB0000396,Not available
+Lipid,"Fatty Acid, Dicarboxylate",3-carboxy-4-methyl-5-propyl-2-furanpropanoate (CMPF),HMDB0061112,Not available
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),docosapentaenoate (n3 DPA; 22:5n3),"HMDB0006528,HMDB0001976",C16513
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),docosadienoate (22:2n6),HMDB0061714,C16533
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),adrenate (22:4n6),HMDB0002226,C16527
+Lipid,Medium Chain Fatty Acid,10-undecenoate (11:1n1),HMDB0033724,C13910
+Lipid,Long Chain Monounsaturated Fatty Acid,myristoleate (14:1n5),HMDB0002000,C08322
+Amino Acid,Histidine Metabolism,4-imidazoleacetate,HMDB0002024,C02835
+Amino Acid,Histidine Metabolism,1-methyl-4-imidazoleacetate,HMDB0002820,C05828
+Lipid,"Fatty Acid, Dicarboxylate",sebacate (C10-DC),HMDB0000792,C08277
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),stearidonate (18:4n3),HMDB0006547,C16300
+Lipid,Medium Chain Fatty Acid,5-dodecenoate (12:1n7),HMDB0000529,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Medium Chain)",octanoylcarnitine (C8),HMDB0000791,C02838
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Medium Chain)",decanoylcarnitine (C10),HMDB0000651,Not available
+Amino Acid,Glutamate Metabolism,N-acetylglutamine,HMDB0006029,C02716
+Amino Acid,Tryptophan Metabolism,N-acetyltryptophan,HMDB0013713,C03137
+Amino Acid,Phenylalanine Metabolism,N-acetylphenylalanine,HMDB0000512,C03519
+Lipid,Lysophospholipid,1-palmitoyl-GPC (16:0),HMDB0010382,C04102
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,N-acetylarginine,HMDB0004620,C02562
+Lipid,Sterol,campesterol,HMDB0002869,C01789
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Long Chain Saturated)",myristoylcarnitine (C14),HMDB000506,Not available
+Lipid,Lysophospholipid,1-stearoyl-GPC (18:0),HMDB0010384,Not available
+Lipid,Lysophospholipid,1-oleoyl-GPC (18:1),HMDB0002815,C03916
+Amino Acid,"Glycine, Serine and Threonine Metabolism",N-acetylthreonine,HMDB0062557,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",N-acetylisoleucine,HMDB0061684,Not available
+Lipid,Long Chain Monounsaturated Fatty Acid,10-nonadecenoate (19:1n9),HMDB0013622,Not available
+Lipid,Long Chain Monounsaturated Fatty Acid,10-heptadecenoate (17:1n7),HMDB0060038,Not available
+Lipid,Secondary Bile Acid Metabolism,hyocholate,HMDB0000760,C17649
+Lipid,Androgenic Steroids,epiandrosterone sulfate,HMDB0062657,C04555
+Amino Acid,Histidine Metabolism,N-acetylhistidine,HMDB0032055,C02997
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamylglycine,HMDB0011667,Not available
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamyltryptophan,HMDB0029160,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",alpha-hydroxyisovalerate,HMDB0000407,Not available
+Cofactors and Vitamins,Nicotinate and Nicotinamide Metabolism,nicotinamide riboside,HMDB0000855,C03150
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamylmethionine,HMDB0029155,Not available
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamylthreonine,HMDB0029159,Not available
+Carbohydrate,Aminosugar Metabolism,erythronate*,HMDB0000613,Not available
+Peptide,Fibrinogen Cleavage Peptide,Fibrinopeptide A*,Not available,Not available
+Peptide,Fibrinogen Cleavage Peptide,"Fibrinopeptide A, des-ala(1)*",Not available,Not available
+Peptide,Fibrinogen Cleavage Peptide,"Fibrinopeptide A, phosphono-ser(3)*",Not available,Not available
+Lipid,Long Chain Monounsaturated Fatty Acid,eicosenoate (20:1),"HMDB0002231,HMDB0062436",C16526
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),linolenate [alpha or gamma; (18:3n3 or 6)],"HMDB0003073,HMDB0001388","C06426,C06427"
+Energy,TCA Cycle,aconitate [cis or trans],"HMDB0000958,HMDB000072","C004174,C02341"
+Cofactors and Vitamins,Hemoglobin and Porphyrin Metabolism,heme,HMDB0003178,C00032
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Long Chain Saturated)",stearoylcarnitine (C18),HMDB0000848,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Medium Chain)",laurylcarnitine (C12),HMDB000225,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",isovalerylcarnitine (C5),HMDB0000688,C20826
+Lipid,Lysophospholipid,1-linoleoyl-GPC (18:2),HMDB0010386,C04100
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,methylurea,Not available,C16363
+Nucleotide,"Purine Metabolism, (Hypo)Xanthine/Inosine containing",N1-methylinosine,HMDB0002721,Not available
+Nucleotide,"Purine Metabolism, Guanine containing","N2,N2-dimethylguanosine",HMDB0004824,Not available
+Nucleotide,"Pyrimidine Metabolism, Cytidine containing",N4-acetylcytidine,HMDB0005923,Not available
+Nucleotide,"Purine Metabolism, Adenine containing",N6-carbamoylthreonyladenosine,HMDB0041623,Not available
+Nucleotide,"Pyrimidine Metabolism, Orotate containing",orotidine,HMDB0000788,Not available
+Peptide,Acetylated Peptides,phenylacetylglutamine,HMDB0006344,C04148
+Nucleotide,"Pyrimidine Metabolism, Uracil containing","5,6-dihydrouridine",HMDB0000497,Not available
+Nucleotide,"Pyrimidine Metabolism, Uracil containing",3-(3-amino-3-carboxypropyl)uridine*,Not available,Not available
+Lipid,Monoacylglycerol,1-arachidonylglycerol (20:4),HMDB11578,C13857
+Lipid,Monoacylglycerol,1-linolenoylglycerol (18:3),HMDB0011569,Not available
+Amino Acid,Glutathione Metabolism,cysteine-glutathione disulfide,HMDB0000656,R00900
+Nucleotide,"Pyrimidine Metabolism, Uracil containing",5-methyluridine (ribothymidine),HMDB0000884,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",isovalerylglycine,HMDB00678,Not available
+Lipid,"Fatty Acid, Dicarboxylate",3-hydroxydodecanedioate*,HMDB0000413,Not available
+Nucleotide,"Purine Metabolism, Guanine containing",7-methylguanine,HMDB0000897,C02242
+Lipid,Lysophospholipid,1-stearoyl-GPE (18:0),HMDB0011130,Not available
+Lipid,Lysophospholipid,1-stearoyl-GPG (18:0),Not available,Not available
+Nucleotide,"Pyrimidine Metabolism, Cytidine containing",3-methylcytidine,HMDB0240577,Not available
+Cofactors and Vitamins,Nicotinate and Nicotinamide Metabolism,N1-Methyl-2-pyridone-5-carboxamide,HMDB0004193,C05842
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamylisoleucine*,HMDB0011170,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Monounsaturated)",oleoylcarnitine (C18:1),HMDB0005065,Not available
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamyl-2-aminobutyrate,Not available,Not available
+Amino Acid,Tyrosine Metabolism,phenol sulfate,HMDB0060015,C02180
+Lipid,Lysophospholipid,1-palmitoleoyl-GPC (16:1)*,HMDB0010383,Not available
+Lipid,Fatty Acid Synthesis,malonylcarnitine,HMDB0002095,Not available
+Lipid,Fatty Acid Metabolism (Acyl Glycine),hexanoylglycine,HMDB0000701,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,glutamine_degradant*,Not available,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",2-hydroxy-3-methylvalerate,HMDB0000317,Not available
+Lipid,Lysophospholipid,1-arachidonoyl-GPC (20:4n6)*,HMDB0010395,C05208
+Lipid,Lysophospholipid,2-palmitoyl-GPC (16:0)*,HMDB0061702,Not available
+Lipid,Lysophospholipid,1-palmitoyl-GPE (16:0),HMDB0011503,Not available
+Lipid,Lysophospholipid,1-oleoyl-GPE (18:1),HMDB0011506,Not available
+Lipid,Lysophospholipid,1-linoleoyl-GPE (18:2)*,HMDB0011507,Not available
+Lipid,Lysophospholipid,1-arachidonoyl-GPE (20:4n6)*,HMDB0011517,Not available
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,N-acetylcitrulline,HMDB0000856,"C15532,C02851"
+Lipid,"Fatty Acid, Monohydroxy",2-hydroxypalmitate,HMDB0031057,Not available
+Cofactors and Vitamins,Ascorbate and Aldarate Metabolism,gulonate*,HMDB0003290,C00800
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",isobutyrylglycine,HMDB0000730,Not available
+Amino Acid,Lysine Metabolism,glutarylcarnitine (C5-DC),HMDB0013130,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",beta-hydroxyisovaleroylcarnitine,Not available,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",tiglylcarnitine (C5:1-DC),HMDB0002366,Not available
+Lipid,Sterol,cholesterol sulfate,HMDB00653,C18043
+Lipid,Sterol,7-alpha-hydroxy-3-oxo-4-cholestenoate (7-Hoca),HMDB0012458,C17337
+Lipid,Sterol,"3beta,7alpha-dihydroxy-5-cholestenoate",HMDB0012454,C17335
+Amino Acid,Glutamate Metabolism,N-acetyl-aspartyl-glutamate (NAAG),HMDB0001067,C12270
+Lipid,"Fatty Acid, Dicarboxylate",tetradecanedioate (C14-DC),HMDB0000872,Not available
+Lipid,"Fatty Acid, Dicarboxylate",hexadecanedioate (C16-DC),HMDB0000672,C19615
+Lipid,"Fatty Acid, Dicarboxylate",octadecanedioate (C18-DC),HMDB0000782,Not available
+Lipid,"Fatty Acid, Dicarboxylate",undecanedioate (C11-DC),HMDB0000888,Not available
+Lipid,Phospholipid Metabolism,glycerophosphoethanolamine,HMDB0000114,C01233
+Lipid,Lysophospholipid,1-arachidonoyl-GPI (20:4)*,HMDB0061690,Not available
+Lipid,Lysophospholipid,1-palmitoyl-GPI (16:0),HMDB0061695,Not available
+Lipid,Secondary Bile Acid Metabolism,glycolithocholate sulfate*,HMDB0002639,C11301
+Lipid,Secondary Bile Acid Metabolism,taurolithocholate 3-sulfate,HMDB0002580,C03642
+Lipid,Carnitine Metabolism,deoxycarnitine,HMDB0001161,C01181
+Nucleotide,"Purine Metabolism, Adenine containing",N6-succinyladenosine,HMDB0000912,Not available
+Amino Acid,Histidine Metabolism,1-ribosyl-imidazoleacetate*,HMDB0002331,C05131
+Amino Acid,Lysine Metabolism,N2-acetyllysine,HMDB0000446,C12989
+Lipid,"Fatty Acid, Monohydroxy",alpha-hydroxycaproate,HMDB0001624,Not available
+Lipid,"Fatty Acid, Dihydroxy","3,4-dihydroxybutyrate",HMDB0000337,Not available
+Amino Acid,Tryptophan Metabolism,indoleacetylglutamine,HMDB0013240,Not available
+Lipid,Fatty Acid Metabolism (Acyl Glutamine),hexanoylglutamine,Not available,Not available
+Amino Acid,Lysine Metabolism,N6-acetyllysine,HMDB0000206,C02727
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),dihomo-linolenate (20:3n3 or n6),HMDB0002925,C03242
+Carbohydrate,"Fructose, Mannose and Galactose Metabolism",mannitol/sorbitol,"HMDB0000247,HMDB0000765","C00392,C00794"
+Amino Acid,Tryptophan Metabolism,tryptophan betaine,HMDB0061115,C09213
+Lipid,"Fatty Acid, Dicarboxylate",3-methyladipate,HMDB0000555,Not available
+Carbohydrate,Advanced Glycation End-product,N6-carboxymethyllysine,HMDB0240347,Not available
+Lipid,Sterol,"3beta,7beta-dihydroxy-5-cholestenoate",Not available,Not available
+Lipid,Lysophospholipid,1-oleoyl-GPI (18:1),HMDB0061693,Not available
+Lipid,Lysophospholipid,1-linoleoyl-GPI (18:2)*,Not available,Not available
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,dimethylarginine (SDMA + ADMA),"HMDB0003334,HMDB0001539","C21189,C03626"
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamylalanine,HMDB0029142,C03738
+Amino Acid,"Glycine, Serine and Threonine Metabolism",N-acetylserine,HMDB0002931,Not available
+Lipid,Phosphatidylethanolamine (PE),1-stearoyl-2-oleoyl-GPE (18:0/18:1),HMDB0008993,Not available
+Lipid,Inositol Metabolism,chiro-inositol,HMDB0240209,C19891
+Lipid,Phosphatidylcholine (PC),1-stearoyl-2-arachidonoyl-GPC (18:0/20:4),HMDB0008048,Not available
+Lipid,Phosphatidylethanolamine (PE),1-palmitoyl-2-linoleoyl-GPE (16:0/18:2),HMDB0005322,Not available
+Lipid,Sphingolipid Synthesis,sphinganine-1-phosphate,HMDB0001383,Not available
+Lipid,Hexosylceramides (HCER),glycosyl-N-stearoyl-sphingosine (d18:1/18:0),Not available,Not available
+Energy,TCA Cycle,succinylcarnitine (C4-DC),HMDB0061717,Not available
+Cofactors and Vitamins,Hemoglobin and Porphyrin Metabolism,"bilirubin (E,E)*",Not available,Not available
+Cofactors and Vitamins,Hemoglobin and Porphyrin Metabolism,"bilirubin (E,Z or Z,E)*",HMDB0000488,C00486
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,N-methylproline,HMDB0094696,Not available
+Cofactors and Vitamins,Vitamin A Metabolism,beta-cryptoxanthin,HMDB0033844,C08591
+Lipid,Androgenic Steroids,"5alpha-androstan-3beta,17beta-diol disulfate",HMDB00493,C12525
+Lipid,Progestin Steroids,"5alpha-pregnan-3beta,20alpha-diol disulfate",HMDB0094650,Not available
+Lipid,Secondary Bile Acid Metabolism,glycocholenate sulfate*,Not available,Not available
+Lipid,Secondary Bile Acid Metabolism,taurocholenate sulfate*,Not available,Not available
+Lipid,Androgenic Steroids,"androstenediol (3beta,17beta) disulfate (1)",HMDB0240313,C04295
+Lipid,Pregnenolone Steroids,pregnenediol disulfate (C21H34O8S2)*,Not available,Not available
+Lipid,Androgenic Steroids,"androstenediol (3beta,17beta) disulfate (2)",HMDB0240313,Not available
+Lipid,Pregnenolone Steroids,21-hydroxypregnenolone disulfate,Not available,Not available
+Lipid,Androgenic Steroids,"5alpha-androstan-3alpha,17alpha-diol monosulfate",HMDB0000412,Not available
+Lipid,Progestin Steroids,"5alpha-pregnan-3beta,20beta-diol monosulfate (1)",HMDB0240580,Not available
+Lipid,Progestin Steroids,"5alpha-pregnan-3beta,20alpha-diol monosulfate (2)",Not available,Not available
+Lipid,Progestin Steroids,5alpha-pregnan-diol disulfate,"HMDB0240581,HMDB0240582",Not available
+Lipid,Androgenic Steroids,"5alpha-androstan-3alpha,17beta-diol disulfate",HMDB0094682,Not available
+Lipid,Androgenic Steroids,"5alpha-androstan-3alpha,17beta-diol monosulfate (1)",Not available,Not available
+Lipid,Androgenic Steroids,"5alpha-androstan-3beta,17alpha-diol disulfate",HMDB0094682,Not available
+Lipid,Androgenic Steroids,"5alpha-androstan-3beta,17beta-diol monosulfate (2)",Not available,Not available
+Lipid,Androgenic Steroids,"androstenediol (3alpha, 17alpha) monosulfate (2)",Not available,Not available
+Lipid,Androgenic Steroids,"androstenediol (3alpha, 17alpha) monosulfate (3)",Not available,Not available
+Lipid,Androgenic Steroids,"androstenediol (3beta,17beta) monosulfate (1)",HMDB0240429,Not available
+Lipid,Androgenic Steroids,"androstenediol (3beta,17beta) monosulfate (2)","HMDB0240429,HMDB0186954",Not available
+Lipid,Pregnenolone Steroids,pregnenediol sulfate (C21H34O5S)*,HMDB0000774,C18044
+Lipid,"Fatty Acid, Dicarboxylate",2-hydroxyglutarate,HMDB0059655,C02630
+Cofactors and Vitamins,Tocopherol Metabolism,gamma-CEHC,HMDB0001931,Not available
+Nucleotide,"Pyrimidine Metabolism, Uracil containing",N-acetyl-beta-alanine,HMDB0061880,C01073
+Lipid,Sphingomyelins,"sphingomyelin (d18:1/18:1, d18:2/18:0)",HMDB0012101,Not available
+Lipid,Sphingomyelins,palmitoyl sphingomyelin (d18:1/16:0),HMDB0010169,Not available
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",cysteine sulfinic acid,HMDB0000996,C00606
+Lipid,Androgenic Steroids,16a-hydroxy DHEA 3-sulfate,HMDB0062544,Not available
+Lipid,Pregnenolone Steroids,17alpha-hydroxypregnenolone 3-sulfate,HMDB00416,Not available
+Lipid,Pregnenolone Steroids,pregnenolone sulfate,HMDB0000774,C18044
+Lipid,Androgenic Steroids,andro steroid monosulfate C19H28O6S (1)*,HMDB0002759,Not available
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",S-methylmethionine,HMDB0038670,C05319
+Amino Acid,Tryptophan Metabolism,indole-3-carboxylate,HMDB0003320,C19837
+Lipid,"Fatty Acid, Monohydroxy",13-HODE + 9-HODE,"HMDB0004670,HMDB0004667","C14767,C14762"
+Lipid,"Fatty Acid, Dicarboxylate",tridecenedioate (C13:1-DC)*,Not available,Not available
+Amino Acid,Histidine Metabolism,N-acetyl-3-methylhistidine*,Not available,Not available
+Lipid,Sterol,4-cholesten-3-one,HMDB0000921,C00599
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Monounsaturated)",cis-4-decenoylcarnitine (C10:1),HMDB0013205,Not available
+Lipid,"Fatty Acid, Dihydroxy","2S,3R-dihydroxybutyrate",HMDB0002453,Not available
+Lipid,"Fatty Acid, Branched",(12 or 13)-methylmyristate (a15:0 or i15:0),HMDB0061707,Not available
+Lipid,"Fatty Acid, Branched",(16 or 17)-methylstearate (a19:0 or i19:0),HMDB0037397,Not available
+Lipid,"Fatty Acid, Dihydroxy","2R,3R-dihydroxybutyrate",HMDB0000498,Not available
+Amino Acid,Glutamate Metabolism,alpha-ketoglutaramate*,HMDB0001552,C00940
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",3-methylglutaconate,HMDB0000522,Not available
+Amino Acid,Lysine Metabolism,5-(galactosylhydroxy)-L-lysine,Not available,Not available
+Amino Acid,Glutathione Metabolism,cysteinylglycine disulfide*,HMDB0000709,Not available
+Lipid,Secondary Bile Acid Metabolism,isoursodeoxycholate,HMDB0000686,C17662
+Amino Acid,Histidine Metabolism,formiminoglutamate,HMDB0000854,C00439
+Amino Acid,Histidine Metabolism,hydantoin-5-propionate,HMDB0001212,C05565
+Lipid,"Fatty Acid, Dicarboxylate",4-hydroxy-2-oxoglutaric acid,HMDB0002070,C01127
+Amino Acid,Glutamate Metabolism,4-hydroxyglutamate,HMDB0001344,C03079
+Cofactors and Vitamins,Hemoglobin and Porphyrin Metabolism,L-urobilin,HMDB0004159,C05793
+Cofactors and Vitamins,Pantothenate and CoA Metabolism,pantoate,Not available,C00522
+Carbohydrate,Pentose Metabolism,sedoheptulose,HMDB0003219,C02076
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",S-methylcysteine,HMDB0002108,Not available
+Lipid,Androgenic Steroids,androsterone glucuronide,HMDB0002829,C11135
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,argininate*,HMDB0003148,Not available
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,2-oxoarginine*,HMDB0004225,C03771
+Lipid,Medium Chain Fatty Acid,cis-4-decenoate (10:1n6)*,HMDB0004980,Not available
+Cofactors and Vitamins,Vitamin A Metabolism,4-oxo-retinoic acid,HMDB0006285,Not available
+Lipid,Lysophospholipid,1-lignoceroyl-GPC (24:0),HMDB0010405,Not available
+Lipid,Lysoplasmalogen,1-(1-enyl-palmitoyl)-GPC (P-16:0)*,HMDB0010407,Not available
+Amino Acid,Histidine Metabolism,1-methyl-5-imidazoleacetate,HMDB04988,Not available
+Lipid,Secondary Bile Acid Metabolism,glycoursodeoxycholate,HMDB0000708,Not available
+Lipid,Secondary Bile Acid Metabolism,ursocholate,HMDB0000917,C17644
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",S-methylcysteine sulfoxide,HMDB0029432,Not available
+Lipid,"Fatty Acid, Branched",(14 or 15)-methylpalmitate (a17:0 or i17:0),HMDB0061859,C16995
+Lipid,"Fatty Acid, Dicarboxylate",eicosanedioate (C20-DC),Not available,Not available
+Lipid,"Fatty Acid, Dicarboxylate",docosadioate (C22-DC),HMDB0061714,C14240
+Lipid,"Fatty Acid, Monohydroxy",16-hydroxypalmitate,HMDB0006294,C18218
+Lipid,Diacylglycerol,oleoyl-linoleoyl-glycerol (18:1/18:2) [1],HMDB0007219,Not available
+Lipid,Diacylglycerol,oleoyl-linoleoyl-glycerol (18:1/18:2) [2],HMDB0007219,Not available
+Lipid,Lysoplasmalogen,1-(1-enyl-palmitoyl)-GPE (P-16:0)*,HMDB0011152,Not available
+Lipid,Lysoplasmalogen,1-(1-enyl-stearoyl)-GPE (P-18:0)*,Not available,Not available
+Lipid,Endocannabinoid,N-oleoyltaurine,Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Polyunsaturated)",linoleoylcarnitine (C18:2)*,HMDB0006469,Not available
+Amino Acid,Glutamate Metabolism,N-methyl-GABA,Not available,C15987
+Peptide,Dipeptide,isoleucylglycine,HMDB0028907,Not available
+Peptide,Dipeptide,leucylglycine,HMDB0028929,Not available
+Lipid,Endocannabinoid,N-stearoyltaurine,Not available,Not available
+Cofactors and Vitamins,Ascorbate and Aldarate Metabolism,2-O-methylascorbic acid,HMDB0240294,Not available
+Amino Acid,Glutamate Metabolism,carboxyethyl-GABA,HMDB0002201,Not available
+Amino Acid,Glutamate Metabolism,beta-citrylglutamate,Not available,C20775
+Lipid,Phospholipid Metabolism,trimethylamine N-oxide,HMDB0000925,C01104
+Amino Acid,Lysine Metabolism,N6-methyllysine,HMDB0002038,C02728
+Amino Acid,Histidine Metabolism,cis-urocanate,HMDB0034174,Not available
+Amino Acid,Histidine Metabolism,imidazole propionate,HMDB0002271,Not available
+Lipid,Progestin Steroids,pregnanediol-3-glucuronide,HMDB0010318,Not available
+Peptide,Dipeptide,phenylalanylglycine,HMDB0028995,Not available
+Peptide,Dipeptide,prolylglycine,HMDB0011178,Not available
+Lipid,Fatty Acid Metabolism (Acyl Glycine),N-palmitoylglycine,HMDB0013034,Not available
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",lanthionine,Not available,Not available
+Lipid,Lysophospholipid,2-stearoyl-GPE (18:0)*,HMDB0011129,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Hydroxy)",(R)-3-hydroxybutyrylcarnitine,HMDB0013127,Not available
+Amino Acid,Tyrosine Metabolism,5-hydroxymethyl-2-furoic acid,HMDB0002432,C20448
+Amino Acid,Histidine Metabolism,N-acetylcarnosine,HMDB0012881,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Long Chain Saturated)",margaroylcarnitine (C17)*,HMDB0006210,Not available
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",N-methyltaurine,Not available,Not available
+Lipid,Secondary Bile Acid Metabolism,glycohyocholate,HMDB0000138,Not available
+Cofactors and Vitamins,Vitamin A Metabolism,retinal,HMDB0001358,C00376
+Lipid,"Fatty Acid, Monohydroxy",2-hydroxydecanoate,HMDB0094656,Not available
+Lipid,Secondary Bile Acid Metabolism,3b-hydroxy-5-cholenoic acid,HMDB0000308,Not available
+Lipid,"Fatty Acid, Amino",2-aminooctanoate,HMDB0000991,Not available
+Amino Acid,Histidine Metabolism,N-acetyl-1-methylhistidine*,Not available,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:1/14:0, d16:1/16:0)*",HMDB0012097,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:2/16:0, d18:1/16:1)*",Not available,Not available
+Lipid,"Fatty Acid, Dicarboxylate",3-hydroxyadipate,HMDB0000345,Not available
+Amino Acid,Lysine Metabolism,6-oxopiperidine-2-carboxylate,HMDB0061705,Not available
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,N-delta-acetylornithine,HMDB0003357,C00437
+Amino Acid,Polyamine Metabolism,acisoga,HMDB0061384,Not available
+Lipid,"Fatty Acid, Amino",2-aminoheptanoate,HMDB0094649,Not available
+Amino Acid,Tryptophan Metabolism,N-formylanthranilic acid,HMDB0004089,C05653
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,"N2,N5-diacetylornithine",Not available,Not available
+Amino Acid,Tyrosine Metabolism,3-methoxytyramine sulfate,Not available,Not available
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",methionine sulfone,HMDB0062174,Not available
+Lipid,Lysophospholipid,1-linolenoyl-GPC (18:3)*,HMDB0010388,C04100
+Lipid,Lysoplasmalogen,1-(1-enyl-oleoyl)-GPE (P-18:1)*,Not available,Not available
+Amino Acid,Lysine Metabolism,fructosyllysine,HMDB0034879,Not available
+Lipid,Androgenic Steroids,etiocholanolone glucuronide,HMDB0004484,Not available
+Lipid,Pregnenolone Steroids,17alpha-hydroxypregnanolone glucuronide,Not available,Not available
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",N-acetyltaurine,HMDB0240253,Not available
+Lipid,Lysophospholipid,1-oleoyl-GPG (18:1)*,Not available,Not available
+Lipid,Lysophospholipid,1-palmitoyl-GPG (16:0)*,Not available,Not available
+Lipid,"Fatty Acid, Monohydroxy",9-hydroxystearate,HMDB0061661,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",3-methylglutarylcarnitine (2),HMDB0000552,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:2/14:0, d18:1/14:1)*",Not available,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:1/24:1, d18:2/24:0)*",HMDB0012107,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Dicarboxylate)",octadecenedioylcarnitine (C18:1-DC)*,Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Dicarboxylate)",octadecanedioylcarnitine (C18-DC)*,Not available,Not available
+Lipid,Androgenic Steroids,"5alpha-androstan-3alpha,17beta-diol monosulfate (2)",Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Monounsaturated)",myristoleoylcarnitine (C14:1)*,HMDB0240588,Not available
+Amino Acid,Tyrosine Metabolism,N-formylphenylalanine,HMDB0240317,Not available
+Amino Acid,Tyrosine Metabolism,tyramine O-sulfate,HMDB0006409,Not available
+Peptide,Acetylated Peptides,phenylacetylcarnitine,Not available,Not available
+Carbohydrate,Pentose Metabolism,arabonate/xylonate,HMDB0000539,"C00502,C05411"
+Lipid,Monoacylglycerol,1-dihomo-linolenylglycerol (20:3),Not available,Not available
+Amino Acid,Tyrosine Metabolism,vanillic alcohol sulfate,HMDB0041788,Not available
+Lipid,Progestin Steroids,pregnanolone/allopregnanolone sulfate,"HMDB0240591,HMDB0062782",C05480
+Amino Acid,Tyrosine Metabolism,p-cresol glucuronide*,HMDB0011686,Not available
+Amino Acid,Tyrosine Metabolism,4-methoxyphenol sulfate,Not available,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:1/20:0, d16:1/22:0)*",HMDB0012102,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:1/20:1, d18:2/20:0)*",Not available,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:1/20:2, d18:2/20:1, d16:1/22:2)*",Not available,Not available
+Lipid,Sphingomyelins,behenoyl sphingomyelin (d18:1/22:0)*,HMDB0012103,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:1/22:1, d18:2/22:0, d16:1/24:1)*",HMDB0012104,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:1/22:2, d18:2/22:1, d16:1/24:2)*",Not available,Not available
+Lipid,Sphingomyelins,lignoceroyl sphingomyelin (d18:1/24:0),Not available,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d17:1/16:0, d18:1/15:0, d16:1/17:0)*",Not available,Not available
+Amino Acid,Tyrosine Metabolism,dopamine 4-sulfate,HMDB0004148,C13691
+Amino Acid,Tyrosine Metabolism,dopamine 3-O-sulfate,HMDB0006275,C13690
+Lipid,"Fatty Acid, Monohydroxy",3-hydroxyhexanoate,"HMDB0061652,HMDB0010718",Not available
+Lipid,Sterol,3beta-hydroxy-5-cholestenoate,Not available,C17333
+Amino Acid,Tryptophan Metabolism,N-acetylkynurenine (2),Not available,Not available
+Amino Acid,Tryptophan Metabolism,C-glycosyltryptophan,HMDB0240296,Not available
+Carbohydrate,Pentose Metabolism,arabitol/xylitol,"HMDB0001851,HMDB0000568,HMDB0002917","C00379,C00542,C01904"
+Carbohydrate,Aminosugar Metabolism,N-acetylglucosamine/N-acetylgalactosamine,"HMDB0000212,HMDB0000215",C01074
+Energy,TCA Cycle,citraconate/glutaconate,"HMDB0000634,HMDB0000620","C02226,C02214"
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Dicarboxylate)",adipoylcarnitine (C6-DC),HMDB0061677,Not available
+Amino Acid,Tyrosine Metabolism,4-hydroxyphenylacetoylcarnitine,Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Medium Chain)",nonanoylcarnitine (C9),HMDB0013288,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Dicarboxylate)",suberoylcarnitine (C8-DC),Not available,Not available
+Lipid,Primary Bile Acid Metabolism,glycochenodeoxycholate 3-sulfate,"HMDB0002409,HMDB0002496,HMDB0002497",Not available
+Lipid,Secondary Bile Acid Metabolism,glycodeoxycholate 3-sulfate,Not available,Not available
+Lipid,Secondary Bile Acid Metabolism,taurodeoxycholic acid 3-sulfate,Not available,Not available
+Amino Acid,Tyrosine Metabolism,phenol glucuronide,HMDB0060014,Not available
+Lipid,Endocannabinoid,linoleoyl ethanolamide,HMDB0012252,Not available
+Lipid,Phosphatidylcholine (PC),"1,2-dilinoleoyl-GPC (18:2/18:2)",HMDB0008138,Not available
+Lipid,Phosphatidylcholine (PC),1-stearoyl-2-oleoyl-GPC (18:0/18:1),HMDB0008038,Not available
+Lipid,Phosphatidylcholine (PC),1-palmitoyl-2-arachidonoyl-GPC (16:0/20:4n6),HMDB0007982,C05208
+Lipid,Phosphatidylcholine (PC),1-palmitoyl-2-docosahexaenoyl-GPC (16:0/22:6),HMDB0007991,Not available
+Lipid,Phosphatidylcholine (PC),1-stearoyl-2-docosahexaenoyl-GPC (18:0/22:6),HMDB0008057,Not available
+Lipid,Plasmalogen,1-(1-enyl-stearoyl)-2-oleoyl-GPE (P-18:0/18:1),HMDB0011375,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:1/17:0, d17:1/18:0, d19:1/16:0)",Not available,Not available
+Lipid,Phosphatidylcholine (PC),1-palmitoyl-2-stearoyl-GPC (16:0/18:0),HMDB0007970,C03889
+Amino Acid,Glutathione Metabolism,2-hydroxybutyrate/2-hydroxyisobutyrate,"HMDB0000729,HMDB00008","C21297,C05984"
+Lipid,Long Chain Monounsaturated Fatty Acid,oleate/vaccenate (18:1),"HMDB0003231,HMDB0000573,HMDB0240219,HMDB0000207","C21944,C08367,C01712,C00712"
+Lipid,Monoacylglycerol,1-palmitoleoylglycerol (16:1)*,Not available,Not available
+Lipid,Dihydrosphingomyelins,palmitoyl dihydrosphingomyelin (d18:0/16:0)*,HMDB0010168,Not available
+Lipid,Sphingomyelins,tricosanoyl sphingomyelin (d18:1/23:0)*,HMDB0012105,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:2/23:0, d18:1/23:1, d17:1/24:1)*",Not available,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:2/24:1, d18:1/24:2)*",Not available,Not available
+Lipid,Phosphatidylethanolamine (PE),1-stearoyl-2-linoleoyl-GPE (18:0/18:2)*,HMDB0008994,Not available
+Lipid,Phosphatidylethanolamine (PE),1-stearoyl-2-arachidonoyl-GPE (18:0/20:4),HMDB0009003,C05210
+Lipid,Phosphatidylcholine (PC),1-stearoyl-2-linoleoyl-GPC (18:0/18:2)*,HMDB0008039,Not available
+Lipid,Phosphatidylcholine (PC),1-palmitoyl-2-palmitoleoyl-GPC (16:0/16:1)*,HMDB0007969,Not available
+Lipid,Phosphatidylcholine (PC),1-palmitoyl-2-dihomo-linolenoyl-GPC (16:0/20:3n3 or 6)*,Not available,Not available
+Lipid,Phosphatidylethanolamine (PE),1-palmitoyl-2-arachidonoyl-GPE (16:0/20:4)*,HMDB0005323,C05210
+Lipid,Phosphatidylethanolamine (PE),1-palmitoyl-2-docosahexaenoyl-GPE (16:0/22:6)*,HMDB0008946,Not available
+Lipid,Phosphatidylethanolamine (PE),1-stearoyl-2-docosahexaenoyl-GPE (18:0/22:6)*,HMDB0009012,Not available
+Lipid,Phosphatidylinositol (PI),1-palmitoyl-2-arachidonoyl-GPI (16:0/20:4)*,HMDB0009789,Not available
+Lipid,Phosphatidylinositol (PI),1-stearoyl-2-linoleoyl-GPI (18:0/18:2),HMDB0009809,Not available
+Cofactors and Vitamins,Tocopherol Metabolism,gamma-tocopherol/beta-tocopherol,"HMDB0006335,HMDB0001492","C14152,C02483"
+Lipid,Plasmalogen,1-(1-enyl-stearoyl)-2-arachidonoyl-GPE (P-18:0/20:4)*,HMDB0005779,Not available
+Lipid,Plasmalogen,1-(1-enyl-palmitoyl)-2-arachidonoyl-GPE (P-16:0/20:4)*,HMDB0011352,Not available
+Lipid,Plasmalogen,1-(1-enyl-palmitoyl)-2-oleoyl-GPE (P-16:0/18:1)*,HMDB0011342,Not available
+Lipid,Plasmalogen,1-(1-enyl-palmitoyl)-2-oleoyl-GPC (P-16:0/18:1)*,HMDB0007996,Not available
+Lipid,Plasmalogen,1-(1-enyl-palmitoyl)-2-linoleoyl-GPC (P-16:0/18:2)*,HMDB0011211,Not available
+Lipid,Plasmalogen,1-(1-enyl-palmitoyl)-2-arachidonoyl-GPC (P-16:0/20:4)*,HMDB0011220,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:1/21:0, d17:1/22:0, d16:1/23:0)*",Not available,Not available
+Lipid,Dihydrosphingomyelins,behenoyl dihydrosphingomyelin (d18:0/22:0)*,HMDB0012091,Not available
+Lipid,Dihydrosphingomyelins,"sphingomyelin (d18:0/18:0, d19:0/17:0)*",HMDB0012087,Not available
+Lipid,Dihydroceramides,N-palmitoyl-sphinganine (d18:0/16:0),HMDB11760,Not available
+Lipid,Lactosylceramides (LCER),lactosyl-N-palmitoyl-sphingosine (d18:1/16:0),Not available,Not available
+Lipid,Dihydrosphingomyelins,myristoyl dihydrosphingomyelin (d18:0/14:0)*,HMDB0012085,Not available
+Amino Acid,Tryptophan Metabolism,5-hydroxyindole sulfate,Not available,Not available
+Peptide,Acetylated Peptides,phenylacetylglutamate,HMDB0059772,Not available
+Lipid,Phosphatidylinositol (PI),1-palmitoyl-2-oleoyl-GPI (16:0/18:1)*,HMDB0009783,Not available
+Lipid,Plasmalogen,1-(1-enyl-palmitoyl)-2-linoleoyl-GPE (P-16:0/18:2)*,HMDB0011343,Not available
+Lipid,Phosphatidylethanolamine (PE),1-oleoyl-2-linoleoyl-GPE (18:1/18:2)*,HMDB0005349,Not available
+Lipid,Lysophospholipid,1-linoleoyl-GPA (18:2)*,HMDB0007856,Not available
+Lipid,Phosphatidylcholine (PC),1-oleoyl-2-docosahexaenoyl-GPC (18:1/22:6)*,HMDB0008123,Not available
+Lipid,Phosphatidylcholine (PC),1-linoleoyl-2-arachidonoyl-GPC (18:2/20:4n6)*,HMDB0008147,C05208
+Lipid,Phosphatidylcholine (PC),1-myristoyl-2-arachidonoyl-GPC (14:0/20:4)*,HMDB0007883,Not available
+Lipid,Plasmalogen,1-(1-enyl-palmitoyl)-2-palmitoleoyl-GPC (P-16:0/16:1)*,HMDB0011207,Not available
+Lipid,Plasmalogen,1-(1-enyl-palmitoyl)-2-palmitoyl-GPC (P-16:0/16:0)*,HMDB0011206,Not available
+Lipid,Phosphatidylinositol (PI),1-stearoyl-2-oleoyl-GPI (18:0/18:1)*,Not available,Not available
+Lipid,Phosphatidylethanolamine (PE),1-oleoyl-2-arachidonoyl-GPE (18:1/20:4)*,HMDB0009069,Not available
+Lipid,Phosphatidylethanolamine (PE),1-oleoyl-2-docosahexaenoyl-GPE (18:1/22:6)*,HMDB0009078,Not available
+Lipid,Plasmalogen,1-(1-enyl-stearoyl)-2-linoleoyl-GPE (P-18:0/18:2)*,HMDB0011376,Not available
+Lipid,Lysophospholipid,1-linoleoyl-GPG (18:2)*,Not available,Not available
+Lipid,Fatty Acid Metabolism (Acyl Choline),palmitoylcholine,HMDB0240592,Not available
+Amino Acid,"Glycine, Serine and Threonine Metabolism",2-methylserine,Not available,C02115
+Lipid,Primary Bile Acid Metabolism,glycochenodeoxycholate glucuronide (1),HMDB0002579,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Hydroxy)",(S)-3-hydroxybutyrylcarnitine,HMDB0013127,Not available
+Lipid,Hexosylceramides (HCER),glycosyl-N-palmitoyl-sphingosine (d18:1/16:0),Not available,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",methylsuccinoylcarnitine,Not available,Not available
+Cofactors and Vitamins,Ascorbate and Aldarate Metabolism,ascorbic acid 2-sulfate,HMDB0060649,Not available
+Lipid,Fatty Acid Metabolism (Acyl Choline),oleoylcholine,HMDB0240596,Not available
+Lipid,Fatty Acid Metabolism (Acyl Choline),arachidonoylcholine,HMDB0240583,Not available
+Lipid,Fatty Acid Metabolism (Acyl Choline),docosahexaenoylcholine,Not available,Not available
+Lipid,Fatty Acid Metabolism (Acyl Choline),dihomo-linolenoyl-choline,Not available,Not available
+Lipid,Fatty Acid Metabolism (Acyl Choline),eicosapentaenoylcholine,Not available,Not available
+Lipid,Phosphatidylcholine (PC),1-linoleoyl-2-linolenoyl-GPC (18:2/18:3)*,HMDB0008141,Not available
+Lipid,Phosphatidylcholine (PC),1-palmitoleoyl-2-linolenoyl-GPC (16:1/18:3)*,HMDB0008008,Not available
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),hexadecadienoate (16:2n6),HMDB0000477,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Monounsaturated)",palmitoleoylcarnitine (C16:1)*,Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Dicarboxylate)",pimeloylcarnitine/3-methyladipoylcarnitine (C7-DC),Not available,Not available
+Peptide,Acetylated Peptides,4-hydroxyphenylacetylglutamine,Not available,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism","2,3-dihydroxy-2-methylbutyrate",HMDB0029576,Not available
+Nucleotide,"Pyrimidine Metabolism, Cytidine containing",2'-O-methylcytidine,Not available,Not available
+Nucleotide,"Pyrimidine Metabolism, Uracil containing",2'-O-methyluridine,Not available,Not available
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamyl-alpha-lysine,Not available,Not available
+Lipid,Diacylglycerol,linoleoyl-docosahexaenoyl-glycerol (18:2/22:6) [1]*,HMDB0007266,Not available
+Lipid,Diacylglycerol,oleoyl-arachidonoyl-glycerol (18:1/20:4) [1]*,HMDB0007228,Not available
+Lipid,Diacylglycerol,oleoyl-arachidonoyl-glycerol (18:1/20:4) [2]*,HMDB0007228,Not available
+Lipid,Diacylglycerol,"diacylglycerol (16:1/18:2 [2], 16:0/18:3 [1])*",Not available,Not available
+Lipid,Ceramides,N-palmitoyl-sphingadienine (d18:2/16:0)*,Not available,Not available
+Lipid,Lactosylceramides (LCER),lactosyl-N-nervonoyl-sphingosine (d18:1/24:1)*,Not available,Not available
+Lipid,Lactosylceramides (LCER),lactosyl-N-behenoyl-sphingosine (d18:1/22:0)*,HMDB0011594,Not available
+Lipid,Hexosylceramides (HCER),glycosyl-N-behenoyl-sphingadienine (d18:2/22:0)*,Not available,Not available
+Lipid,Ceramides,N-stearoyl-sphingadienine (d18:2/18:0)*,Not available,Not available
+Lipid,Endocannabinoid,N-palmitoylserine,Not available,Not available
+Lipid,Endocannabinoid,N-oleoylserine,Not available,Not available
+Lipid,Sphingolipid Synthesis,sphingadienine,Not available,Not available
+Lipid,Ceramides,"ceramide (d16:1/24:1, d18:1/22:1)*",Not available,Not available
+Lipid,Ceramides,N-palmitoyl-heptadecasphingosine (d17:1/16:0)*,Not available,Not available
+Lipid,Ceramides,"ceramide (d18:1/14:0, d16:1/16:0)*",Not available,Not available
+Lipid,Ceramides,"ceramide (d18:1/17:0, d17:1/18:0)*",Not available,Not available
+Lipid,Ceramides,"ceramide (d18:2/24:1, d18:1/24:2)*",Not available,Not available
+Lipid,Hexosylceramides (HCER),"glycosyl ceramide (d18:2/24:1, d18:1/24:2)*",Not available,Not available
+Lipid,Ceramides,"ceramide (d18:1/20:0, d16:1/22:0, d20:1/18:0)*",Not available,Not available
+Lipid,Fatty Acid Metabolism (Acyl Choline),stearoylcholine*,Not available,Not available
+Lipid,Fatty Acid Metabolism (Acyl Choline),linoleoylcholine*,HMDB0013213,Not available
+Lipid,Lysophospholipid,1-cerotoyl-GPC (26:0)*,HMDB29205,Not available
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),nisinate (24:6n3),HMDB0013025,Not available
+Lipid,Dihydrosphingomyelins,"sphingomyelin (d18:0/20:0, d16:0/22:0)*",Not available,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:1/19:0, d19:1/18:0)*",Not available,Not available
+Lipid,Sphingomyelins,sphingomyelin (d18:2/18:1)*,HMDB0001348,Not available
+Lipid,Sphingomyelins,sphingomyelin (d18:2/24:2)*,Not available,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:2/21:0, d16:2/23:0)*",Not available,Not available
+Lipid,Sphingomyelins,sphingomyelin (d18:2/23:1)*,Not available,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d18:1/25:0, d19:0/24:1, d20:1/23:0, d19:1/24:0)*",Not available,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d17:2/16:0, d18:2/15:0)*",Not available,Not available
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),heneicosapentaenoate (21:5n3),Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Polyunsaturated)",linolenoylcarnitine (C18:3)*,Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Long Chain Saturated)",behenoylcarnitine (C22)*,HMDB0062468,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Long Chain Saturated)",arachidoylcarnitine (C20)*,HMDB0006460,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Long Chain Saturated)",lignoceroylcarnitine (C24)*,Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Long Chain Saturated)",cerotoylcarnitine (C26)*,HMDB0006347,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Monounsaturated)",ximenoylcarnitine (C26:1)*,Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Polyunsaturated)",arachidonoylcarnitine (C20:4),HMDB0006455,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Monounsaturated)",eicosenoylcarnitine (C20:1)*,Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Polyunsaturated)",dihomo-linoleoylcarnitine (C20:2)*,Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Polyunsaturated)",dihomo-linolenoylcarnitine (C20:3n3 or 6)*,Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Polyunsaturated)",docosahexaenoylcarnitine (C22:6)*,Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Monounsaturated)",nervonoylcarnitine (C24:1)*,Not available,Not available
+Lipid,Hexosylceramides (HCER),"glycosyl ceramide (d18:1/20:0, d16:1/22:0)*",Not available,Not available
+Amino Acid,Lysine Metabolism,"N,N,N-trimethyl-5-aminovalerate",Not available,Not available
+Cofactors and Vitamins,Vitamin A Metabolism,carotene diol (1),Not available,Not available
+Cofactors and Vitamins,Vitamin A Metabolism,carotene diol (2),Not available,Not available
+Cofactors and Vitamins,Vitamin A Metabolism,carotene diol (3),Not available,Not available
+Lipid,Corticosteroids,cortolone glucuronide (1),Not available,Not available
+Amino Acid,Polyamine Metabolism,(N(1) + N(8))-acetylspermidine,"HMDB0002189,HMDB0001276","C01029,C00612"
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Monounsaturated)",5-dodecenoylcarnitine (C12:1),HMDB13326,Not available
+Lipid,Fatty Acid Metabolism (Acyl Glycine),2-butenoylglycine,Not available,Not available
+Lipid,"Fatty Acid, Dicarboxylate",hydroxy-CMPF*,Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Hydroxy)",3-hydroxyoleoylcarnitine,Not available,Not available
+Lipid,Fatty Acid Metabolism (Acyl Glycine),trans-2-hexenoylglycine,Not available,Not available
+Lipid,"Fatty Acid, Monohydroxy",2-hydroxyarachidate*,Not available,Not available
+Lipid,Endocannabinoid,N-stearoylserine*,Not available,Not available
+Lipid,"Fatty Acid, Monohydroxy",3-hydroxyoleate*,Not available,Not available
+Carbohydrate,Pentose Metabolism,lyxonate,Not available,Not available
+Lipid,"Fatty Acid, Dicarboxylate",dodecenedioate (C12:1-DC)*,HMDB0000933,Not available
+Lipid,"Fatty Acid, Dicarboxylate",hexadecenedioate (C16:1-DC)*,Not available,Not available
+Lipid,"Fatty Acid, Dicarboxylate",octadecenedioate (C18:1-DC),Not available,Not available
+Lipid,"Fatty Acid, Dicarboxylate",heptenedioate (C7:1-DC)*,Not available,Not available
+Lipid,"Fatty Acid, Dicarboxylate",octadecadienedioate (C18:2-DC)*,Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,glucuronide of C10H18O2 (1)*,Not available,Not available
+Lipid,"Fatty Acid, Dicarboxylate",3-carboxy-4-methyl-5-pentyl-2-furanpropionate (3-CMPFP)**,HMDB0061643,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,glucuronide of C10H18O2 (7)*,Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,glucuronide of C10H18O2 (8)*,Not available,Not available
+Lipid,"Fatty Acid, Amino",N-acetyl-2-aminooctanoate*,HMDB0059745,Not available
+Amino Acid,Alanine and Aspartate Metabolism,hydroxyasparagine**,HMDB32332,C20631
+Lipid,Primary Bile Acid Metabolism,glyco-beta-muricholate**,Not available,Not available
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,N-methylhydroxyproline**,Not available,Not available
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,"N,N,N-trimethyl-alanylproline betaine (TMAP)",HMDB0240365,Not available
+Peptide,Gamma-glutamyl Amino Acid,gamma-glutamylcitrulline*,Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,glycine conjugate of C10H12O2*,Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,glycine conjugate of C10H14O2 (1)*,Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,glutamine conjugate of C7H12O2*,Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,glutamine conjugate of C6H10O2 (1)*,Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,glutamine conjugate of C6H10O2 (2)*,Not available,Not available
+Lipid,Sphingomyelins,"sphingomyelin (d17:1/14:0, d16:1/15:0)*",Not available,Not available
+Lipid,Long Chain Polyunsaturated Fatty Acid (n3 and n6),tetradecadienoate (14:2)*,HMDB0000560,Not available
+Amino Acid,Tryptophan Metabolism,8-methoxykynurenate,HMDB0060426,C05830
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,3-amino-2-piperidone,HMDB0000323,Not available
+Amino Acid,Alanine and Aspartate Metabolism,"N,N-dimethylalanine",Not available,Not available
+Lipid,"Fatty Acid, Dicarboxylate",2-hydroxysebacate,HMDB0000424,Not available
+Cofactors and Vitamins,Ascorbate and Aldarate Metabolism,ascorbic acid 3-sulfate*,Not available,Not available
+Amino Acid,Tryptophan Metabolism,6-bromotryptophan,Not available,Not available
+Amino Acid,Lysine Metabolism,"N6,N6-dimethyllysine",HMDB0013287,C05545
+Amino Acid,Phenylalanine Metabolism,1-carboxyethylphenylalanine,Not available,Not available
+Amino Acid,Tyrosine Metabolism,1-carboxyethyltyrosine,Not available,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",1-carboxyethylvaline,Not available,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",1-carboxyethylleucine,Not available,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",1-carboxyethylisoleucine,Not available,Not available
+Lipid,"Fatty Acid, Dicarboxylate",dodecadienoate (12:2)*,Not available,Not available
+Amino Acid,Tryptophan Metabolism,indoleacetoylcarnitine*,Not available,Not available
+Amino Acid,Polyamine Metabolism,N-acetyl-isoputreanine,Not available,Not available
+Amino Acid,Urea cycle; Arginine and Proline Metabolism,N-acetylhomocitrulline,Not available,Not available
+Lipid,Androgenic Steroids,11beta-hydroxyandrosterone glucuronide,Not available,Not available
+Amino Acid,Lysine Metabolism,"N2-acetyl,N6,N6-dimethyllysine",Not available,Not available
+Amino Acid,Lysine Metabolism,"N2-acetyl,N6-methyllysine",Not available,Not available
+Lipid,Primary Bile Acid Metabolism,cholic acid glucuronide,HMDB0002577,Not available
+Lipid,Secondary Bile Acid Metabolism,deoxycholic acid glucuronide,Not available,Not available
+Lipid,Fatty Acid Metabolism (Acyl Glutamine),4-methylhexanoylglutamine,Not available,Not available
+Lipid,Secondary Bile Acid Metabolism,glycoursodeoxycholic acid sulfate (1),Not available,Not available
+Lipid,Secondary Bile Acid Metabolism,lithocholate sulfate (1),Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Hydroxy)",3-hydroxyhexanoylcarnitine (1),Not available,Not available
+Amino Acid,"Leucine, Isoleucine and Valine Metabolism",2-ketocaprylate,HMDB13211,Not available
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism","2,3-dihydroxy-5-methylthio-4-pentenoate (DMTPA)*",HMDB0240388,Not available
+Lipid,Sphingomyelins,hydroxypalmitoyl sphingomyelin (d18:1/16:0(OH))**,Not available,Not available
+Lipid,Secondary Bile Acid Metabolism,taurochenodeoxycholic acid 3-sulfate,HMDB0002486,Not available
+Lipid,"Fatty Acid, Dicarboxylate",tetradecadienedioate (C14:2-DC)*,Not available,Not available
+Lipid,Pregnenolone Steroids,pregnenetriol sulfate*,Not available,Not available
+Lipid,Pregnenolone Steroids,pregnenetriol disulfate*,Not available,Not available
+Lipid,"Fatty Acid, Dicarboxylate",eicosenedioate (C20:1-DC)*,Not available,Not available
+Amino Acid,Lysine Metabolism,"hydroxy-N6,N6,N6-trimethyllysine*",Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Monounsaturated)",undecenoylcarnitine (C11:1),Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Hydroxy)",3-hydroxydecanoylcarnitine,HMDB0061636,Not available
+Lipid,Ceramide PEs,palmitoyl-sphingosine-phosphoethanolamine (d18:1/16:0),Not available,Not available
+Lipid,Fatty Acid Metabolism (Acyl Glycine),picolinoylglycine,HMDB0059766,Not available
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",succinoyltaurine,Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,metabolonic lactone sulfate,Not available,Not available
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",2-hydroxy-4-(methylthio)butanoic acid,HMDB0037115,Not available
+Lipid,"Fatty Acid, Dicarboxylate",branched chain 14:0 dicarboxylic acid**,Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,pentose acid*,HMDB0000892,C00803
+Amino Acid,Histidine Metabolism,1-methyl-5-imidazolelactate,Not available,Not available
+Lipid,Medium Chain Fatty Acid,(2 or 3)-decenoate (10:1n7 or n8),Not available,Not available
+Amino Acid,"Methionine, Cysteine, SAM and Taurine Metabolism",S-carboxyethylcysteine,Not available,Not available
+Lipid,Primary Bile Acid Metabolism,chenodeoxycholic acid sulfate (1),HMDB0002522,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,"branched-chain, straight-chain, or cyclopropyl 10:1 fatty acid (1)*",Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,"branched-chain, straight-chain, or cyclopropyl 10:1 fatty acid (2)*",Not available,Not available
+Lipid,"Fatty Acid, Branched",citronellic acid,HMDB35837,C16462
+Partially Characterized Molecules,Partially Characterized Molecules,"branched-chain, straight-chain, or cyclopropyl 12:1 fatty acid*",Not available,Not available
+Lipid,"Fatty Acid, Dicarboxylate",decadienedioic acid (C10:2-DC)**,Not available,Not available
+Lipid,Secondary Bile Acid Metabolism,deoxycholic acid 12-sulfate*,Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,GlcNAc sulfate conjugate of C21H34O2 steroid**,Not available,Not available
+Lipid,"Fatty Acid, Branched","cis-3,4-methyleneheptanoate",Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Medium Chain)","cis-3,4-methyleneheptanoylcarnitine",Not available,Not available
+Amino Acid,Lysine Metabolism,N-acetyl-2-aminoadipate,Not available,C12986
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Hydroxy)",3-hydroxyoctanoylcarnitine (1),Not available,Not available
+Lipid,"Fatty Acid Metabolism (Acyl Carnitine, Hydroxy)",3-hydroxyoctanoylcarnitine (2),Not available,Not available
+Lipid,Fatty Acid Metabolism (Acyl Glycine),"cis-3,4-methyleneheptanoylglycine",Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,"bilirubin degradation product, C16H18N2O5 (1)**",Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,"bilirubin degradation product, C16H18N2O5 (2)**",Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,"bilirubin degradation product, C17H18N2O4 (1)**",Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,"bilirubin degradation product, C17H18N2O4 (2)**",Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,"bilirubin degradation product, C17H18N2O4 (3)**",Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,"bilirubin degradation product, C17H20N2O5 (1)**",Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,"bilirubin degradation product, C17H20N2O5 (2)**",Not available,Not available
+Lipid,Corticosteroids,tetrahydrocortisol glucuronide,Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,"bilirubin degradation product, C16H18N2O5 (3)**",Not available,Not available
+Partially Characterized Molecules,Partially Characterized Molecules,"bilirubin degradation product, C16H18N2O5 (4)**",Not available,Not available
+Amino Acid,Histidine Metabolism,1-carboxyethylhistidine,Not available,Not available
+Peptide,Modified Peptides,"N,N-dimethyl-pro-pro",Not available,Not available
+Amino Acid,Tryptophan Metabolism,oxindolylalanine,Not available,Not available
+Lipid,Corticosteroids,tetrahydrocortisone glucuronide (5),Not available,Not available
