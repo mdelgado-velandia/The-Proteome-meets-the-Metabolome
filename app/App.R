@@ -26,7 +26,7 @@ mr_df <- rio::import("MendelianRandomization_data.csv")
 prot_anno <- rio::import("ProteinInstruments_annotation.csv")
 measured_prot_anno <- rio::import("ProteinsMeasurements_annotation.csv")
 met_anno <- rio::import("Metabolites_annotation.csv")
-studios_description <- rio::import("Studies description.csv")
+studios_description <- rio::import("Studies_description.csv")
 
 
 
