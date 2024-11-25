@@ -15,6 +15,11 @@ RUN Rscript -e 'BiocManager::install(c("ComplexHeatmap"),ask = F)'
 RUN rm -rf /srv/shiny-server/*
 COPY /app/ /srv/shiny-server/
 
+# Create folder for keeping app cache
+RUN mkdir /srv/shiny-server/app_cache/
+# Give access to appripriate files and folders to the created user
+RUN chown -R shiny:shiny /srv/shiny-server/
+
 USER shiny
 
 EXPOSE 3838
