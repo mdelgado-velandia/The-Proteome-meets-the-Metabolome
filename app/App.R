@@ -1439,7 +1439,7 @@ server <- function(input, output, session) {
         
         df_filtered <- obs_df[ which( (obs_df$`Super pathway` %in% c( input$pathway_obs_plot ) | obs_df$`Sub pathway` %in% c(input$pathway_obs_plot ) ) & ( obs_df$`Protein abbreviation` %in% c(input$protein_obs_plot ) | obs_df$`Protein name` %in% c(input$protein_obs_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta m2", "Nominal p-value m2") ]
         
-        showNotification("Preocessing your request.", type ="message",  duration = 1 )
+        showNotification("Processing your request.", type ="message",  duration = 2 )
         
         
       } else if(input$boolean_obs_plot == "OR"){
@@ -1451,7 +1451,7 @@ server <- function(input, output, session) {
         df_filtered <- obs_df[ which( (obs_df$`Super pathway` %in% c( input$pathway_obs_plot ) | obs_df$`Sub pathway` %in% c(input$pathway_obs_plot ) | obs_df$`Protein abbreviation` %in% c(input$protein_obs_plot ) | obs_df$`Protein name` %in% c(input$protein_obs_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta m2", "Nominal p-value m2") ]
         
         
-        showNotification("Preocessing your request.", type ="message",  duration = 1 )
+        showNotification("Processing your request.", type ="message",  duration = 2 )
         
       }
       
@@ -1648,7 +1648,7 @@ server <- function(input, output, session) {
     HT_obs_plot <<- ht
     
     
-    final_width <<- (( (convertX( grobWidth(textGrob(rownames(betas), gpar(fontsize = 11, fontface = 1))) , "inch", valueOnly = TRUE)/1) + convertX(  ComplexHeatmap:::width( draw( ht)) , "inch", valueOnly = TRUE )  ) )
+    final_width <<- (( (convertX( grobWidth(textGrob(rownames(betas), gpar(fontsize = 11, fontface = 1))) , "inch", valueOnly = TRUE)/4) + convertX(  ComplexHeatmap:::width( draw( ht)) , "inch", valueOnly = TRUE )  ) )
     
     final_height <<- ( convertX(  ComplexHeatmap:::height(draw(ht)) , "inch", valueOnly = TRUE ) )
     
@@ -1893,7 +1893,7 @@ server <- function(input, output, session) {
         df_filtered <- mr_df[ which( (mr_df$`Super pathway` %in% c( input$pathway_mr_plot ) | mr_df$`Sub pathway` %in% c(input$pathway_mr_plot ) ) & ( mr_df$`Protein abbreviation` %in% c(input$protein_mr_plot ) | mr_df$`Protein name` %in% c(input$protein_mr_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta", "Nominal p-value") ]
         
         
-        showNotification("Preocessing your request.", type ="message",  duration = 1 )
+        showNotification("Processing your request.", type ="message",  duration = 2 )
         
         
       } else if(input$boolean_mr_plot == "OR"){
@@ -1905,7 +1905,7 @@ server <- function(input, output, session) {
         df_filtered <- mr_df[ which( (mr_df$`Super pathway` %in% c( input$pathway_mr_plot ) | mr_df$`Sub pathway` %in% c(input$pathway_mr_plot ) | mr_df$`Protein abbreviation` %in% c(input$protein_mr_plot ) | mr_df$`Protein name` %in% c(input$protein_mr_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta", "Nominal p-value") ]
         
         
-        showNotification("Preocessing your request.", type ="message",  duration = 1 )
+        showNotification("Processing your request.", type ="message",  duration = 2 )
         
       }
       
@@ -2096,7 +2096,7 @@ server <- function(input, output, session) {
     HT_mr_plot <<- ht
     
     
-    final_width_mr <<- (( (convertX( grobWidth(textGrob(rownames(betas), gpar(fontsize = 11, fontface = 1))) , "inch", valueOnly = TRUE)/1 ) + convertX(  ComplexHeatmap:::width(ht) , "inch", valueOnly = TRUE )  ) )
+    final_width_mr <<- (( (convertX( grobWidth(textGrob(rownames(betas), gpar(fontsize = 11, fontface = 1))) , "inch", valueOnly = TRUE)/4 ) + convertX(  ComplexHeatmap:::width(ht) , "inch", valueOnly = TRUE )  ) )
     
     final_height_mr <<- ( convertX(  ComplexHeatmap:::height(ht) , "inch", valueOnly = TRUE ) )
     
