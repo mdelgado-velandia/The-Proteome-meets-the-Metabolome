@@ -587,15 +587,19 @@ ui <- fluidPage(page_navbar(
     title = "More",
     align = "right",
     nav_item(tags$a("About Us", 
-                    href = "https://www.uu.se/en/department/medical-sciences/research/research-groups/clinical-epidemiology")),
+                    href = "https://www.uu.se/en/department/medical-sciences/research/research-groups/clinical-epidemiology",
+                    target = "_blank" )),
     nav_item(tags$a("EpiHealth", 
-                    href = "https://www.epihealth.lu.se/en/about-us")),
+                    href = "https://www.epihealth.lu.se/en/about-us",
+                    target = "_blank" )),
     nav_item(tags$a("SCAPIS", 
-                    href = "https://www.scapis.org/")),
+                    href = "https://www.scapis.org/",
+                    target = "_blank" )),
     # nav_item(tags$a("PIVUS",
     #                 href = "https://www.uu.se/en/department/medical-sciences/research/epidemiological-studies/pivus")),
     nav_item(tags$a("POEM",
-                    href = "https://www.maelstrom-research.org/study/poem"))
+                    href = "https://www.maelstrom-research.org/study/poem",
+                    target = "_blank" ))
     
   )
   
@@ -1783,7 +1787,7 @@ server <- function(input, output, session) {
     
     content = function(file) {
       
-      write.csv(df_to_download, file)
+      write.csv(df_to_download, file, row.names = FALSE)
       
     }
     
@@ -2225,7 +2229,7 @@ server <- function(input, output, session) {
     
     content = function(file) {
       
-      write.csv(df_to_download, file)
+      write.csv(df_to_download, file, row.names = FALSE)
       
     }
     
