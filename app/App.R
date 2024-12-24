@@ -15,18 +15,32 @@ library(ComplexHeatmap) # 2.21.1
 
 
 # Set working directory----
-#setwd("D:/All OneDrive/Doctorado/Postdoc/Shiny/MR results/App")
+# setwd("D:/All OneDrive/Doctorado/Postdoc/Shiny/MR results/App")
 
 
 
 
 # Load data----
 obs_df <- rio::import("Observational_data.csv")
-mr_df <- rio::import("MendelianRandomization_data.csv")
 prot_anno <- rio::import("ProteinInstruments_annotation.csv")
 measured_prot_anno <- rio::import("ProteinsMeasurements_annotation.csv")
 met_anno <- rio::import("Metabolites_annotation.csv")
 studios_description <- rio::import("Studies_description.csv")
+
+
+mr_df_1 <- rio::import("MendelianRandomization_data_1.csv")
+mr_df_2 <- rio::import("MendelianRandomization_data_2.csv")
+mr_df_3 <- rio::import("MendelianRandomization_data_3.csv")
+mr_df <- rbind(mr_df_1, mr_df_2, mr_df_3)
+export(mr_df, "MendelianRandomization_data.csv")
+
+annex_1 <- rio::import("Proteomics_and_metabolomics_analyses_in_POEM_1.csv")
+annex_2 <- rio::import("Proteomics_and_metabolomics_analyses_in_POEM_2.csv")
+annex_3 <- rio::import("Proteomics_and_metabolomics_analyses_in_POEM_3.csv")
+annex <- rbind(annex_1, annex_2, annex_3)
+export(annex, "www/Proteomics_and_metabolomics_analyses_in_POEM.csv")
+
+
 
 
 
@@ -374,7 +388,7 @@ ui <- fluidPage(page_navbar(
                          br(), 
                          br(),
                          
-                         tags$div(  plotOutput("heatmap_obs", inline = TRUE ) ) 
+                         tags$div(  plotOutput("heatmap_obs") , style = "display:block;"   ) 
                          
                        ) # end fluidPage   
                        
@@ -431,7 +445,7 @@ ui <- fluidPage(page_navbar(
                          br(), 
                          br(),
                          
-                         tags$div( plotOutput("heatmap_mr"), inline = TRUE )
+                         tags$div( plotOutput("heatmap_mr") , style = "display:block;" )  
                          
                        ) # end fluidPage 
                        
@@ -471,7 +485,7 @@ ui <- fluidPage(page_navbar(
             p(""),
             p(""),
             
-            p( tags$span(style = "font-size:17px", tags$b("Supplementary Table 2."), "Description of the genetic instruments of proteins' levels used for the Mendelian Randomization analyses.") ),
+            p( tags$span(style = "font-size:17px", tags$b("Supplementary Table 2."), "Description of the genetic instruments of proteins' levels used for the Mendelian Randomization analyses. Log10 p-values equal to 100.000 mean infinite.") ),
             
             # Supplementary 2; table render and download botton
             fluidRow( 
@@ -1422,6 +1436,7 @@ server <- function(input, output, session) {
   )
   
   
+
   
   
   ht_obs <- observeEvent(input$button_obs_plot,{
@@ -1443,7 +1458,7 @@ server <- function(input, output, session) {
         
         df_filtered <- obs_df[ which( (obs_df$`Super pathway` %in% c( input$pathway_obs_plot ) | obs_df$`Sub pathway` %in% c(input$pathway_obs_plot ) ) & ( obs_df$`Protein abbreviation` %in% c(input$protein_obs_plot ) | obs_df$`Protein name` %in% c(input$protein_obs_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta m2", "Nominal p-value m2") ]
         
-        showNotification("Processing your request.", type ="message",  duration = 2 )
+        # showNotification("Processing your request.", type ="message",  duration = 2 )
         
         
       } else if(input$boolean_obs_plot == "OR"){
@@ -1455,7 +1470,7 @@ server <- function(input, output, session) {
         df_filtered <- obs_df[ which( (obs_df$`Super pathway` %in% c( input$pathway_obs_plot ) | obs_df$`Sub pathway` %in% c(input$pathway_obs_plot ) | obs_df$`Protein abbreviation` %in% c(input$protein_obs_plot ) | obs_df$`Protein name` %in% c(input$protein_obs_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta m2", "Nominal p-value m2") ]
         
         
-        showNotification("Processing your request.", type ="message",  duration = 2 )
+        # showNotification("Processing your request.", type ="message",  duration = 2 )
         
       }
       
@@ -1660,7 +1675,6 @@ server <- function(input, output, session) {
     
     
     output$heatmap_obs <- shiny::renderPlot({
-      
       
       draw(ht)
       
@@ -1874,6 +1888,8 @@ server <- function(input, output, session) {
   )
   
   
+
+  
   
   
   ht_mr <- observeEvent(input$button_mr_plot,{
@@ -1897,7 +1913,7 @@ server <- function(input, output, session) {
         df_filtered <- mr_df[ which( (mr_df$`Super pathway` %in% c( input$pathway_mr_plot ) | mr_df$`Sub pathway` %in% c(input$pathway_mr_plot ) ) & ( mr_df$`Protein abbreviation` %in% c(input$protein_mr_plot ) | mr_df$`Protein name` %in% c(input$protein_mr_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta", "Nominal p-value") ]
         
         
-        showNotification("Processing your request.", type ="message",  duration = 2 )
+        # showNotification("Processing your request.", type ="message",  duration = 2 )
         
         
       } else if(input$boolean_mr_plot == "OR"){
@@ -1909,7 +1925,7 @@ server <- function(input, output, session) {
         df_filtered <- mr_df[ which( (mr_df$`Super pathway` %in% c( input$pathway_mr_plot ) | mr_df$`Sub pathway` %in% c(input$pathway_mr_plot ) | mr_df$`Protein abbreviation` %in% c(input$protein_mr_plot ) | mr_df$`Protein name` %in% c(input$protein_mr_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta", "Nominal p-value") ]
         
         
-        showNotification("Processing your request.", type ="message",  duration = 2 )
+        # showNotification("Processing your request.", type ="message",  duration = 2 )
         
       }
       
@@ -2106,7 +2122,6 @@ server <- function(input, output, session) {
     
     
     output$heatmap_mr <- shiny::renderPlot({
-      
       
       
       ht
@@ -2364,8 +2379,9 @@ server <- function(input, output, session) {
   # Supplementary table 4
   output$table_supp4 <- renderReactable({
     reactable(studios_description, 
-              filterable = TRUE, 
-              searchable = TRUE,
+              filterable = FALSE, 
+              searchable = FALSE,
+              sortable = FALSE,
               bordered = TRUE,
               highlight = TRUE,
               defaultColDef = colDef(
@@ -2373,7 +2389,7 @@ server <- function(input, output, session) {
                 align = "center",
                 headerStyle = list(background = "#f7f7f8")
               ),
-              defaultPageSize = 5,
+              defaultPageSize = 19,
               showPageSizeOptions = TRUE,
               pageSizeOptions = c(5, 10, 25, 50, 100),
               paginationType = "jump",
