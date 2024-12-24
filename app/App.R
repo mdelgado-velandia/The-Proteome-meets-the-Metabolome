@@ -1460,7 +1460,7 @@ server <- function(input, output, session) {
         
         df_filtered <- obs_df[ which( (obs_df$`Super pathway` %in% c( input$pathway_obs_plot ) | obs_df$`Sub pathway` %in% c(input$pathway_obs_plot ) ) & ( obs_df$`Protein abbreviation` %in% c(input$protein_obs_plot ) | obs_df$`Protein name` %in% c(input$protein_obs_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta m2", "Nominal p-value m2") ]
         
-        # showNotification("Processing your request.", type ="message",  duration = 2 )
+        showNotification("Processing your request.", type ="message",  duration = 2 )
         
         
       } else if(input$boolean_obs_plot == "OR"){
@@ -1472,7 +1472,7 @@ server <- function(input, output, session) {
         df_filtered <- obs_df[ which( (obs_df$`Super pathway` %in% c( input$pathway_obs_plot ) | obs_df$`Sub pathway` %in% c(input$pathway_obs_plot ) | obs_df$`Protein abbreviation` %in% c(input$protein_obs_plot ) | obs_df$`Protein name` %in% c(input$protein_obs_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta m2", "Nominal p-value m2") ]
         
         
-        # showNotification("Processing your request.", type ="message",  duration = 2 )
+        showNotification("Processing your request.", type ="message",  duration = 2 )
         
       }
       
@@ -1915,7 +1915,7 @@ server <- function(input, output, session) {
         df_filtered <- mr_df[ which( (mr_df$`Super pathway` %in% c( input$pathway_mr_plot ) | mr_df$`Sub pathway` %in% c(input$pathway_mr_plot ) ) & ( mr_df$`Protein abbreviation` %in% c(input$protein_mr_plot ) | mr_df$`Protein name` %in% c(input$protein_mr_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta", "Nominal p-value") ]
         
         
-        # showNotification("Processing your request.", type ="message",  duration = 2 )
+        showNotification("Processing your request.", type ="message",  duration = 2 )
         
         
       } else if(input$boolean_mr_plot == "OR"){
@@ -1927,7 +1927,7 @@ server <- function(input, output, session) {
         df_filtered <- mr_df[ which( (mr_df$`Super pathway` %in% c( input$pathway_mr_plot ) | mr_df$`Sub pathway` %in% c(input$pathway_mr_plot ) | mr_df$`Protein abbreviation` %in% c(input$protein_mr_plot ) | mr_df$`Protein name` %in% c(input$protein_mr_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta", "Nominal p-value") ]
         
         
-        # showNotification("Processing your request.", type ="message",  duration = 2 )
+        showNotification("Processing your request.", type ="message",  duration = 2 )
         
       }
       
