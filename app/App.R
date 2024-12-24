@@ -33,13 +33,15 @@ mr_df_2 <- rio::import("MendelianRandomization_data_2.csv")
 mr_df_3 <- rio::import("MendelianRandomization_data_3.csv")
 mr_df <- rbind(mr_df_1, mr_df_2, mr_df_3)
 export(mr_df, "MendelianRandomization_data.csv")
+rm(mr_df_1, mr_df_2, mr_df_3)
 
-annex_1 <- rio::import("Proteomics_and_metabolomics_analyses_in_POEM_1.csv")
-annex_2 <- rio::import("Proteomics_and_metabolomics_analyses_in_POEM_2.csv")
-annex_3 <- rio::import("Proteomics_and_metabolomics_analyses_in_POEM_3.csv")
+
+annex_1 <- rio::import("www/Proteomics_and_metabolomics_analyses_in_POEM_1.csv")
+annex_2 <- rio::import("www/Proteomics_and_metabolomics_analyses_in_POEM_2.csv")
+annex_3 <- rio::import("www/Proteomics_and_metabolomics_analyses_in_POEM_3.csv")
 annex <- rbind(annex_1, annex_2, annex_3)
 export(annex, "www/Proteomics_and_metabolomics_analyses_in_POEM.csv")
-
+rm(annex_1, annex_2, annex_3, annex)
 
 
 
