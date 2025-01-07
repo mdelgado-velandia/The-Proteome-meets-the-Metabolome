@@ -7,7 +7,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Command to install standard R packages from CRAN; enter the list of required packages for your app here
-RUN Rscript -e 'install.packages(c("bslib","reactable", "rio", "tidyverse", "shinyFeedback", "circlize", "BiocManager"), dependencies = TRUE)'
+RUN Rscript -e 'install.packages(c("bslib","reactable", "rio", "tidyverse", "shinyFeedback", "circlize", "BiocManager", "shinybusy", "fst"), dependencies = TRUE)'
 
 # Command to install packages from Bioconductor; enter the list of required Bioconductor packages for your app here
 RUN Rscript -e 'BiocManager::install(c("ComplexHeatmap"),ask = F)'
