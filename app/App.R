@@ -77,7 +77,7 @@ ui <- fluidPage(
   ),
   
   
-
+  
   
   # Loading data spinner
   busy_start_up(
@@ -284,9 +284,7 @@ ui <- fluidPage(
                            
                            tags$div(actionButton("button_mr", "Check!", style = 'margin-top:0px') ,  style="display:inline-block"),
                            
-                           
-                           
-                           
+
                            fluidRow(htmlOutput("result_text_mr")),
                            tags$head(tags$style("#result_text_mr{font-size: 17px;
                                        }"
@@ -384,8 +382,8 @@ ui <- fluidPage(
                                                      options = list('plugins' = list('remove_button'),
                                                                     placeholder = '' ) )      ,  style="display:inline-block"),
                            tags$div( tags$div("") , style="display:inline-block; width: 70px;"  ),
-                           tags$div(  selectizeInput("boolean_obs_plot", "AND / ONLY", choices = c("AND", "ONLY"), multiple = FALSE,
-                                                     selected = "ONLY",
+                           tags$div(  selectizeInput("boolean_obs_plot", "AND", choices = c("AND"), multiple = FALSE,
+                                                     selected = "AND",
                                                      options = list('plugins' = list('remove_button'),
                                                                     placeholder = '' ) )         ,  style="display:inline-block; width: 100px;"),
                            tags$div( tags$div("") , style="display:inline-block; width: 70px;"  ),
@@ -439,8 +437,8 @@ ui <- fluidPage(
                                                      options = list('plugins' = list('remove_button'),
                                                                     placeholder = '' ) )      ,  style="display:inline-block"),
                            tags$div( tags$div("") , style="display:inline-block; width: 70px;"  ),
-                           tags$div(  selectizeInput("boolean_mr_plot", "AND / ONLY", choices = c("AND", "ONLY"), multiple = FALSE,
-                                                     selected = "ONLY",
+                           tags$div(  selectizeInput("boolean_mr_plot", "AND", choices = c("AND"), multiple = FALSE,
+                                                     selected = "AND",
                                                      options = list('plugins' = list('remove_button'),
                                                                     placeholder = '' ))         ,  style="display:inline-block; width: 100px;"),
                            tags$div( tags$div("") , style="display:inline-block; width: 70px;"  ),
@@ -476,7 +474,7 @@ ui <- fluidPage(
                            
                            tags$div( plotOutput("heatmap_mr") , style = "display:block;" )
                            
-
+                           
                            
                          ) # end fluidPage
                          
@@ -561,7 +559,6 @@ ui <- fluidPage(
               fluidRow(
                 column(12,
                        reactableOutput("table_supp4"),
-                       # tableOutput("test")
                        shiny::downloadButton(
                          "downloadData_4", "Download",
                          onClick = "Shiny.setInputValue('table_state:to_csv', Reactable.getState('table_supp4').sortedData)"
@@ -582,10 +579,7 @@ ui <- fluidPage(
               
               p( tags$span(style = "font-size:17px", tags$b("Annex 1."), " Associations between 1,319 proteins and 790 non-xenobiotic plasma metabolites in the POEM study (not validated in an external cohort).") ),
               p(""),
-              # shiny::downloadButton(
-              #   "downloadAnnex1", "Download")
-              
-              # fluidRow(column(6, tags$a(href = 'test.csv', class = "btn", icon("download"), 'Download') ) )
+
               fluidRow(column(6, downloadButton("statFile", "Download" ) ) )
               
               
@@ -659,7 +653,7 @@ ui <- fluidPage(
 
 # Server side----
 server <- function(input, output, session) {
-
+  
   
   
   # Observational analyses page start----
@@ -967,7 +961,7 @@ server <- function(input, output, session) {
   ## Rendering Download buttons----
   observeEvent(input$button_obs, {
     
-    # req( isTruthy(input$metabolite_obs) || isTruthy(input$protein_obs) )
+    req( isTruthy(input$metabolite_obs) || isTruthy(input$protein_obs) )
     
     
     output$download_results <- downloadHandler(
@@ -1273,7 +1267,6 @@ server <- function(input, output, session) {
                 highlight = TRUE,
                 defaultColDef = colDef(
                   align = "center",
-                  # minWidth = 70,
                   headerStyle = list(background = "#f7f7f8")
                 ),                ,
                 defaultPageSize = 5,
@@ -1408,10 +1401,6 @@ server <- function(input, output, session) {
   
   # Selection boxes Obs plot----
   
-  
-  # empty_protein_box <- ifelse(input$protein_obs_plot %in% "")
-  
-  
   observeEvent(input$button_obs_plot,{
     
     if ( input$pathway_obs_plot == "" && (is.null(input$protein_obs_plot )) ) {
@@ -1437,16 +1426,6 @@ server <- function(input, output, session) {
         text = "Please select a protein from the list"
       )
       hideFeedback("pathway_obs_plot")
-      
-    } else if( input$pathway_obs_plot != "" && (!is.null(input$protein_obs_plot ) ) && input$boolean_obs_plot == "ONLY" ){
-      showFeedbackWarning(
-        inputId = "pathway_obs_plot",
-        text = "Please select either a pathway or a protein"
-      )
-      showFeedbackWarning(
-        inputId = "protein_obs_plot",
-        text = "Please select either a pathway or a protein"
-      )
       
     } else {
       hideFeedback("pathway_obs_plot")
@@ -1484,18 +1463,15 @@ server <- function(input, output, session) {
   
   )
   
-
+  
   
   
   
   
   ht_obs <- observeEvent(input$button_obs_plot,{
     
-    # req( isTruthy(input$pathway_obs_plot) || isTruthy(input$protein_obs_plot)  )
-    req( isTruthy( input$pathway_obs_plot != "" & !is.null(input$protein_obs_plot) & input$boolean_obs_plot == "AND" ) ||
-           isTruthy( (input$pathway_obs_plot != "" & is.null(input$protein_obs_plot)) & input$boolean_obs_plot == "ONLY" )  ||
-           isTruthy( (input$pathway_obs_plot == "" & !is.null(input$protein_obs_plot)) & input$boolean_obs_plot == "ONLY" ) )
-    
+    req( isTruthy(input$pathway_obs_plot) || isTruthy(input$protein_obs_plot)  )
+
     
     {
       
@@ -1509,32 +1485,10 @@ server <- function(input, output, session) {
         
         df_filtered <- obs_df[ which( (obs_df$`Super pathway` %in% c( input$pathway_obs_plot ) | obs_df$`Sub pathway` %in% c(input$pathway_obs_plot ) ) & ( obs_df$`Protein abbreviation` %in% c(input$protein_obs_plot ) | obs_df$`Protein name` %in% c(input$protein_obs_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta m2", "Nominal p-value m2") ]
         
-        showNotification("Processing your request.", type ="message",  duration = 2.5 )
+        showNotification("Processing your request.", type ="message",  duration = 1.5 )
         
         
-      } else if( (input$boolean_obs_plot == "ONLY" && input$pathway_obs_plot != "" && is.null(input$protein_obs_plot) ) == TRUE  ){
-        
-        
-        req( isTruthy(input$pathway_obs_plot) || isTruthy(input$protein_obs_plot)  )
-        
-        
-        df_filtered <- obs_df[ which( (obs_df$`Super pathway` %in% c( input$pathway_obs_plot ) | obs_df$`Sub pathway` %in% c(input$pathway_obs_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta m2", "Nominal p-value m2") ]
-        
-        
-        showNotification("Processing your request.", type ="message",  duration = 2.5 )
-        
-      } else if( (input$boolean_obs_plot == "ONLY" && input$pathway_obs_plot == "" && ( !is.null(input$protein_obs_plot) ) ) == TRUE ){
-        
-        
-        req( isTruthy(input$pathway_obs_plot) || isTruthy(input$protein_obs_plot)  )
-        
-        
-        df_filtered <- obs_df[ which( (obs_df$`Protein abbreviation` %in% c(input$protein_obs_plot ) | obs_df$`Protein name` %in% c(input$protein_obs_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta m2", "Nominal p-value m2") ]
-        
-        
-        showNotification("Processing your request.", type ="message",  duration = 2.5 )
-        
-      }
+      } 
       
       
     }
@@ -1761,10 +1715,8 @@ server <- function(input, output, session) {
   
   observeEvent(input$button_obs_plot,{
     
-    # req( ( (isTruthy(input$pathway_obs_plot) || isTruthy(input$protein_obs_plot) ) && input$boolean_obs_plot == "ONLY" ) || ( isTruthy(input$pathway_obs_plot) && isTruthy(input$protein_obs_plot)  && input$boolean_obs_plot == "AND" ) )
-    req( isTruthy( input$pathway_obs_plot != "" & !is.null(input$protein_obs_plot) & input$boolean_obs_plot == "AND" ) ||
-           isTruthy( (input$pathway_obs_plot != "" & is.null(input$protein_obs_plot)) & input$boolean_obs_plot == "ONLY" )  ||
-           isTruthy( (input$pathway_obs_plot == "" & !is.null(input$protein_obs_plot)) & input$boolean_obs_plot == "ONLY" ) )
+    req( isTruthy(input$pathway_obs_plot) || isTruthy(input$protein_obs_plot)  )
+
     
     output$download.button.obs.plot <- renderUI({
       
@@ -1823,11 +1775,9 @@ server <- function(input, output, session) {
   
   observeEvent(input$button_obs_plot,{
     
-    # req( ( (isTruthy(input$pathway_obs_plot) || isTruthy(input$protein_obs_plot) ) && input$boolean_obs_plot == "ONLY" ) || ( isTruthy(input$pathway_obs_plot) && isTruthy(input$protein_obs_plot)  && input$boolean_obs_plot == "AND" ) )
-    req( isTruthy( input$pathway_obs_plot != "" & !is.null(input$protein_obs_plot) & input$boolean_obs_plot == "AND" ) ||
-           isTruthy( (input$pathway_obs_plot != "" & is.null(input$protein_obs_plot)) & input$boolean_obs_plot == "ONLY" )  ||
-           isTruthy( (input$pathway_obs_plot == "" & !is.null(input$protein_obs_plot)) & input$boolean_obs_plot == "ONLY" ) )
+    req( isTruthy(input$pathway_obs_plot) || isTruthy(input$protein_obs_plot)  )
     
+
     output$download.button.obs.plot.data <- renderUI({
       
       
@@ -1914,16 +1864,6 @@ server <- function(input, output, session) {
       )
       hideFeedback("pathway_mr_plot")
       
-    } else if ( input$pathway_mr_plot != "" && (!is.null(input$protein_mr_plot ) )  && input$boolean_mr_plot == "ONLY"  ) {
-      showFeedbackWarning(
-        inputId = "pathway_mr_plot",
-        text = "Please select either a pathway or a protein"
-      )
-      showFeedbackWarning(
-        inputId = "protein_mr_plot",
-        text = "Please select either a pathway or a protein"
-      )
-      
     } else {
       hideFeedback("pathway_mr_plot")
       hideFeedback("protein_mr_plot")
@@ -1972,8 +1912,6 @@ server <- function(input, output, session) {
   
   ht_mr <- observeEvent(input$button_mr_plot,{
     
-    # req( isTruthy(input$pathway_mr_plot) || isTruthy(input$protein_mr_plot)  )
-    # req(  ( isTruthy(input$pathway_mr_plot) || isTruthy(input$protein_mr_plot) )  &&  ( isTruthy(!input$pathway_mr_plot == "Lipid") || isTruthy(!input$pathway_mr_plot == "Amino Acid") )   )
     req( isTruthy( input$pathway_mr_plot != "" & !is.null(input$protein_mr_plot) & input$boolean_mr_plot == "AND" ) ||
            isTruthy( (input$pathway_mr_plot != "" & is.null(input$protein_mr_plot)) & input$boolean_mr_plot == "ONLY" )  ||
            isTruthy( (input$pathway_mr_plot == "" & !is.null(input$protein_mr_plot)) & input$boolean_mr_plot == "ONLY" ) )
@@ -1994,34 +1932,12 @@ server <- function(input, output, session) {
         df_filtered <- mr_df[ which( (mr_df$`Super pathway` %in% c( input$pathway_mr_plot ) | mr_df$`Sub pathway` %in% c(input$pathway_mr_plot ) ) & ( mr_df$`Protein abbreviation` %in% c(input$protein_mr_plot ) | mr_df$`Protein name` %in% c(input$protein_mr_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta", "Nominal p-value") ]
         
         
-        showNotification("Processing your request.", type ="message",  duration = 2.5 )
+        showNotification("Processing your request.", type ="message",  duration = 1.5 )
         
         
-      } else if( (input$boolean_mr_plot == "ONLY" && input$pathway_mr_plot != "" && is.null(input$protein_mr_plot) ) == TRUE ){
-        
-        
-        req( isTruthy(input$pathway_mr_plot) || isTruthy(input$protein_mr_plot)  )
-        
-        
-        df_filtered <- mr_df[ which( (mr_df$`Super pathway` %in% c( input$pathway_mr_plot ) | mr_df$`Sub pathway` %in% c(input$pathway_mr_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta", "Nominal p-value") ]
-        
-        
-        showNotification("Processing your request.", type ="message",  duration = 2.5 )
-        
-      } else if( (input$boolean_mr_plot == "ONLY" && input$pathway_mr_plot == "" && ( !is.null(input$protein_mr_plot) ) ) == TRUE ){
-        
-        
-        req( isTruthy(input$pathway_mr_plot) || isTruthy(input$protein_mr_plot)  )
-        
-        
-        df_filtered <- mr_df[ which( (mr_df$`Protein abbreviation` %in% c(input$protein_mr_plot ) | mr_df$`Protein name` %in% c(input$protein_mr_plot ) ) ), c("Protein name", "Protein abbreviation", "Metabolite", "Beta", "Nominal p-value") ]
-        
-        
-        showNotification("Processing your request.", type ="message",  duration = 2.5 )
-        
-      }
+      } 
       
-
+      
     }
     
     
@@ -2245,10 +2161,7 @@ server <- function(input, output, session) {
   
   observeEvent(input$button_mr_plot,{
     
-    # req( ( (isTruthy(input$pathway_mr_plot) || isTruthy(input$protein_mr_plot) ) && input$boolean_mr_plot == "OR" ) || ( isTruthy(input$pathway_mr_plot) && isTruthy(input$protein_mr_plot)  && input$boolean_mr_plot == "AND" ) )
-    req( isTruthy( input$pathway_mr_plot != "" & !is.null(input$protein_mr_plot) & input$boolean_mr_plot == "AND" ) ||
-           isTruthy( (input$pathway_mr_plot != "" & is.null(input$protein_mr_plot)) & input$boolean_mr_plot == "ONLY" )  ||
-           isTruthy( (input$pathway_mr_plot == "" & !is.null(input$protein_mr_plot)) & input$boolean_mr_plot == "ONLY" ) )
+    req( isTruthy(input$pathway_mr_plot) && isTruthy(input$protein_mr_plot)  && input$boolean_mr_plot == "AND"  )
     
     
     output$download.button.mr.plot <- renderUI({
@@ -2306,10 +2219,8 @@ server <- function(input, output, session) {
   
   observeEvent(input$button_mr_plot,{
     
-    # req( ( (isTruthy(input$pathway_mr_plot) || isTruthy(input$protein_mr_plot) ) && input$boolean_mr_plot == "OR" ) || ( isTruthy(input$pathway_mr_plot) && isTruthy(input$protein_mr_plot)  && input$boolean_mr_plot == "AND" ) )
-    req( isTruthy( input$pathway_mr_plot != "" & !is.null(input$protein_mr_plot) & input$boolean_mr_plot == "AND" ) ||
-           isTruthy( (input$pathway_mr_plot != "" & is.null(input$protein_mr_plot)) & input$boolean_mr_plot == "ONLY" )  ||
-           isTruthy( (input$pathway_mr_plot == "" & !is.null(input$protein_mr_plot)) & input$boolean_mr_plot == "ONLY" ) )
+    req( isTruthy(input$pathway_mr_plot) && isTruthy(input$protein_mr_plot)  && input$boolean_mr_plot == "AND"  )
+
     
     output$download.button.mr.plot.data <- renderUI({
       
@@ -2354,25 +2265,6 @@ server <- function(input, output, session) {
     }
     
   )
-  
-  
-  
-  
-  
-  # Warning message when lipid or amino acid plots are requested
-  output$line_mr <- eventReactive(input$button_mr_plot,{
-    
-    req(  ( isTruthy(input$pathway_mr_plot) || isTruthy(input$protein_mr_plot) )  &&  ( isTruthy(input$pathway_mr_plot == "Lipid") && input$boolean_mr_plot == "ONLY"  )   )
-    # req( ( (isTruthy(input$pathway_obs_plot) || isTruthy(input$protein_obs_plot) ) && input$boolean_obs_plot == "OR" ) || ( isTruthy(input$pathway_obs_plot) && isTruthy(input$protein_obs_plot)  && input$boolean_obs_plot == "AND" ) )
-    
-    
-    # line_MR <- paste("<br>", "<br>", "<br>", "This plot is too large to be displayed. We suggest download it to your local computer.")
-    
-  } )
-  
-  
-  
-  
   
   
   
