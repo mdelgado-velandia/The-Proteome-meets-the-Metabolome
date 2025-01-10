@@ -495,7 +495,7 @@ ui <- fluidPage(
               p(""),
               tags$span(style = "color:black; font-size:13pt", "Here you can find all supplementary tables to our research article."),
               tags$span(style = "color:black; font-size:13pt", "For each table, you can either sort and download it completely, or you can search, filter, sort and download your customized table."),
-              tags$span(style = "color:black; font-size:13pt", "Also, if you cannot open the dropdown menu below, please wait, it could take up to 45 seconds for them to show.") ,
+              tags$span(style = "color:black; font-size:13pt", "Also, if you cannot see the tables below, please wait, it could take up to 45 seconds for them to show.") ,
               
               p(""),
               p(""),
