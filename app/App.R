@@ -978,7 +978,7 @@ server <- function(input, output, session) {
       },
       content = function(file) {
         data <- input$table_state
-        write.csv(data, file)
+        write.csv(data, file, row.names = FALSE)
       }
     )
     
@@ -995,7 +995,7 @@ server <- function(input, output, session) {
       },
       content = function(file) {
         data <- input$table_state
-        write.csv(data, file)
+        write.csv(data, file, row.names = FALSE)
       }
     )
     
@@ -1012,7 +1012,7 @@ server <- function(input, output, session) {
       },
       content = function(file) {
         data <- input$table_state
-        write.csv(data, file)
+        write.csv(data, file, row.names = FALSE)
       }
     )
     
@@ -1348,7 +1348,7 @@ server <- function(input, output, session) {
       },
       content = function(file) {
         data <- input$table_state
-        write.csv(data, file)
+        write.csv(data, file, row.names = FALSE)
       }
     )
     
@@ -1368,7 +1368,7 @@ server <- function(input, output, session) {
       },
       content = function(file) {
         data <- input$table_state
-        write.csv(data, file)
+        write.csv(data, file, row.names = FALSE)
       }
     )
     
@@ -1388,7 +1388,7 @@ server <- function(input, output, session) {
       },
       content = function(file) {
         data <- input$table_state
-        write.csv(data, file)
+        write.csv(data, file, row.names = FALSE)
       }
     )
     
@@ -2318,7 +2318,7 @@ server <- function(input, output, session) {
     },
     content = function(file) {
       data <- input$table_state
-      write.csv(data, file)
+      write.csv(data, file, row.names = FALSE)
     }
   )
   
@@ -2363,7 +2363,7 @@ server <- function(input, output, session) {
     },
     content = function(file) {
       data <- input$table_state
-      write.csv(data, file)
+      write.csv(data, file, row.names = FALSE)
     }
   )
   
@@ -2392,7 +2392,7 @@ server <- function(input, output, session) {
     },
     content = function(file) {
       data <- input$table_state
-      write.csv(data, file)
+      write.csv(data, file, row.names = FALSE)
     }
   )
   
@@ -2422,7 +2422,7 @@ server <- function(input, output, session) {
     },
     content = function(file) {
       data <- input$table_state
-      write.csv(data, file)
+      write.csv(data, file, row.names = FALSE)
     }
   )
   
