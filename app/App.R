@@ -108,7 +108,7 @@ ui <- fluidPage(
               p(""),
               tags$span(style = "color:black; font-size:13pt", "Welcome!"),
               p(""),
-              tags$span(style = "color:black; font-size:13pt", "This webpage was created to provide you with the results from analyses of how proteins are related to metabolites as presented in the paper ",tags$i("When the Proteome Meets the Metabolome - Observational and Mendelian Randomization Analyses"),"."),
+              tags$span(style = "color:black; font-size:13pt", "This webpage was created to provide you with the results from analyses of how proteins are related to metabolites as presented in the paper ",tags$i("When the Proteome Meets the Metabolome - Observational and Mendelian Randomization Analyses.") ),
               
               tags$span(style = "color:black; font-size:13pt", "The results consist of two parts."),
               
@@ -123,11 +123,6 @@ ui <- fluidPage(
               tags$span(style = "color:black; font-size:13pt", "The result tables can be downloaded by pressing the ", tags$i("Download"), " button. The heatmap plots can be downloaded by pressing the ", tags$i("Download plot"), " button, and the underlying data can be downloaded by pressing the ", tags$i("Download data"), " button."),
               
               tags$span(style = "color:black; font-size:13pt", "We have also analyzed how 1,319 proteins were related to each of 790 non-xenobiotic metabolites in the POEM study. Since these relationships were not validated in an external cohort, these results are only available as a table to download in the ", tags$i("Annex"), " tab."),
-              p(""),
-              p(""),
-              p(""),
-              p(""),
-              p(""),
               p(""),
               p(""),
               p(""),
