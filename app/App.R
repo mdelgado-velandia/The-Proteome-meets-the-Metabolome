@@ -1720,7 +1720,7 @@ server <- function(input, output, session) {
   
   observeEvent(input$button_obs_plot,{
     
-    req( isTruthy(input$pathway_obs_plot) || isTruthy(input$protein_obs_plot)  )
+    req( isTruthy(input$pathway_obs_plot) && isTruthy(input$protein_obs_plot)  && input$boolean_obs_plot == "AND"  )
 
     
     output$download.button.obs.plot <- renderUI({
@@ -1780,7 +1780,7 @@ server <- function(input, output, session) {
   
   observeEvent(input$button_obs_plot,{
     
-    req( isTruthy(input$pathway_obs_plot) || isTruthy(input$protein_obs_plot)  )
+    req( isTruthy(input$pathway_obs_plot) && isTruthy(input$protein_obs_plot)  && input$boolean_obs_plot == "AND"  )
     
 
     output$download.button.obs.plot.data <- renderUI({
