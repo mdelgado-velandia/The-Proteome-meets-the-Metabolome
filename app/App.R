@@ -639,8 +639,9 @@ ui <- fluidPage(
       nav_item(tags$a("SCAPIS",
                       href = "https://www.scapis.org/",
                       target = "_blank" )),
-      # nav_item(tags$a("PIVUS",
-      #                 href = "https://www.uu.se/en/department/medical-sciences/research/epidemiological-studies/pivus")),
+      nav_item(tags$a("PIVUS",
+                      href = "https://www.uu.se/en/department/medical-sciences/research/epidemiological-studies/pivus",
+                      target = "_blank" )),
       nav_item(tags$a("POEM",
                       href = "https://www.maelstrom-research.org/study/poem",
                       target = "_blank" ))
