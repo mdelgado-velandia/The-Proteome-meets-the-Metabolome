@@ -112,7 +112,7 @@ ui <- fluidPage(
               
               tags$span(style = "color:black; font-size:13pt", "The results consist of two parts."),
               
-              tags$span(style = "color:black; font-size:13pt", "The first part used epidemiological observational data in which each of 245 proteins were related to each of 790 non-xenobiotic metabolites. A discovery/validation approach was used. The discovery part was performed in the EpiHealth study and the validation phase was performed in the POEM and PIVUS studies."),
+              tags$span(style = "color:black; font-size:13pt", "The first part used epidemiological observational data in which each of 245 proteins were related to each of 790 non-xenobiotic metabolites. A discovery/validation approach was used. The discovery part was performed in the EpiHealth study and the validation phase was performed in the POEM study."),
               tags$span(style = "color:black; font-size:13pt", "In order to see the results, please click the ", tags$i("Observational analyses"),  " tab inside the ", tags$i("Tables"), " tab at the top of this page and then enter the name of a protein or a metabolite to see the results. Two degrees of adjustment were used, age and sex-adjustment and also additional adjustment for BMI and kidney function (eGFR)."),
               tags$span(style = "color:black; font-size:13pt", "You can also see heatmap plots for any of these association in the ", tags$i("Observational analyses"),  " tab inside the ", tags$i("Heatmaps"), " tab at the top of this page. Models adjusted by age, sex, BMI and kidney function (eGFR) are displayed."),
               
@@ -639,9 +639,9 @@ ui <- fluidPage(
       nav_item(tags$a("SCAPIS",
                       href = "https://www.scapis.org/",
                       target = "_blank" )),
-      nav_item(tags$a("PIVUS",
-                      href = "https://www.uu.se/en/department/medical-sciences/research/epidemiological-studies/pivus",
-                      target = "_blank" )),
+     # nav_item(tags$a("PIVUS",
+     #                 href = "https://www.uu.se/en/department/medical-sciences/research/epidemiological-studies/pivus",
+     #                 target = "_blank" )),
       nav_item(tags$a("POEM",
                       href = "https://www.maelstrom-research.org/study/poem",
                       target = "_blank" ))
