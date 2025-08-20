@@ -2,16 +2,16 @@
 # R version 4.4.1
 
 
+
 # Load packages----
 library(shiny) # 1.9.1
-library(bslib) #
+library(bslib) # 0.8.0
 library(reactable) # 0.4.4
 library(rio) # 1.2.3
 library(tidyverse) # 2.0.0
 library(shinyFeedback) # 0.4.0
 library(circlize) # 0.4.16
 library(ComplexHeatmap) # 2.21.1
-library(shinybusy) # 0.3.3
 library(fst) # 0.9.18
 
 
@@ -21,17 +21,11 @@ library(fst) # 0.9.18
 
 
 
-
 # Load data----
-obs_df <- rio::import("Observational_data.csv")
-prot_anno <- rio::import("ProteinInstruments_annotation.csv")
-measured_prot_anno <- rio::import("ProteinsMeasurements_annotation.csv")
-met_anno <- rio::import("Metabolites_annotation.csv")
-studios_description <- rio::import("Studies_description.csv")
+load("Annotations_description_menus.Rdata")
 mr_df <- fst::read_fst("MendelianRandomization_data.fst")
 annex <- fst::read_fst("www/Proteomics_and_metabolomics_analyses_in_POEM.fst")
-export(annex, "www/Proteomics_and_metabolomics_analyses_in_POEM.csv")
-rm(annex)
+
 
 
 
@@ -48,13 +42,6 @@ convertToDataFrame <- function(x, session, inputname) {
 registerInputHandler("to_csv", convertToDataFrame, force = TRUE)
 
 
-
-
-# Function to transform Heatmap metabolites' names to uppercase
-first_letter_uppercase <- function(x) {
-  substr(x, 1, 1) <- toupper(substr(x, 1, 1))
-  x
-}
 
 
 # Option to plot the longest heatmaps
@@ -80,13 +67,13 @@ ui <- fluidPage(
   
   
   # Loading data spinner
-  busy_start_up(
-    loader = spin_epic("orbit", color = "#FFF"),
-    text = "Loading data, this could take up to 15 seconds",
-    timeout = 15000,
-    color = "#FFF",
-    background = "#112446"
-  ),
+  # busy_start_up(
+  #   loader = spin_epic("orbit", color = "#FFF"),
+  #   text = "Loading data, this could take up to 30 seconds",
+  #   timeout = 25000,
+  #   color = "#FFF",
+  #   background = "#112446"
+  # ),
   
   
   
@@ -146,7 +133,7 @@ ui <- fluidPage(
                          p(""),
                          tags$span(style = "color:black; font-size:13pt", "Please select one metabolite and/or one protein, and click", tags$i("Check!."), "If you select the boolean operator OR, you will see all the associations for that metabolite as well as for that protein.") ,
                          tags$span(style = "color:black; font-size:13pt", "If you want to remove a metabolite or a protein, click on the respective box and press backspace.") ,
-                         tags$span(style = "color:black; font-size:13pt", "Also, if you cannot open the dropdown menu below, please wait, it could take up to 45 seconds for them to show.") ,
+                         # tags$span(style = "color:black; font-size:13pt", "Also, if you cannot open the dropdown menu below, please wait, it could take up to 45 seconds for them to show.") ,
                          p(""),
                          p(""),
                          p(""),
@@ -251,7 +238,7 @@ ui <- fluidPage(
                          p(""),
                          tags$span(style = "color:black; font-size:13pt", "Please select one metabolite and/or one protein, and click", tags$i("Check!."), "If you select the boolean operator OR, you will see all the associations for that metabolite as well as for that protein.") ,
                          tags$span(style = "color:black; font-size:13pt", "If you want to remove a metabolite or a protein, click on the respective box and press backspace.") ,
-                         tags$span(style = "color:black; font-size:13pt", "Also, if you cannot open the dropdown menu below, please wait, it could take up to 45 seconds for them to show.") ,
+                         # tags$span(style = "color:black; font-size:13pt", "Also, if you cannot open the dropdown menu below, please wait, it could take up to 45 seconds for them to show.") ,
                          p(""),
                          p(""),
                          p(""),
@@ -366,7 +353,7 @@ ui <- fluidPage(
                          p(""),
                          tags$span(style = "color:black; font-size:13pt", "Please select one super- or sub-pathway, and one or several proteins and click", tags$i("Plot!."), "Nominal p-value <0.01 = two stars; <0.05 = one star; ≥0.05 = no stars. Model adjusted for age, sex, BMI and kidney function (eGFR)" ) ,
                          tags$span(style = "color:black; font-size:13pt", "If you want to remove a super- or sub-pathway, or a protein, click on the respective box and press backspace.") ,
-                         tags$span(style = "color:black; font-size:13pt", "Also, if you cannot open the dropdown menu below, please wait, it could take up to 45 seconds for them to show.") ,
+                         # tags$span(style = "color:black; font-size:13pt", "Also, if you cannot open the dropdown menu below, please wait, it could take up to 45 seconds for them to show.") ,
                          p(""),
                          p(""),
                          p(""),
@@ -422,7 +409,7 @@ ui <- fluidPage(
                          p(""),
                          tags$span(style = "color:black; font-size:13pt", "Please select one super- or sub-pathway, and one or several proteins and click", tags$i("Plot!."), "Nominal p-value <0.01 = two stars; <0.05 = one star; ≥0.05 = no stars." ) ,
                          tags$span(style = "color:black; font-size:13pt", "If you want to remove a super- or sub-pathway, or a protein, click on the respective box and press backspace.") ,
-                         tags$span(style = "color:black; font-size:13pt", "Also, if you cannot open the dropdown menu below, please wait, it could take up to 45 seconds for them to show.") ,
+                         # tags$span(style = "color:black; font-size:13pt", "Also, if you cannot open the dropdown menu below, please wait, it could take up to 45 seconds for them to show.") ,
                          p(""),
                          p(""),
                          p(""),
@@ -494,7 +481,7 @@ ui <- fluidPage(
               p(""),
               tags$span(style = "color:black; font-size:13pt", "Here you can find all supplementary tables to our research article."),
               tags$span(style = "color:black; font-size:13pt", "For each table, you can either sort and download it completely, or you can search, filter, sort and download your customized table."),
-              tags$span(style = "color:black; font-size:13pt", "Also, if you cannot see the tables below, please wait, it could take up to 45 seconds for them to show.") ,
+              # tags$span(style = "color:black; font-size:13pt", "Also, if you cannot see the tables below, please wait, it could take up to 45 seconds for them to show.") ,
               
               p(""),
               p(""),
@@ -708,8 +695,8 @@ server <- function(input, output, session) {
   
   
   # Selection boxes----
-  updateSelectizeInput(session, 'metabolite_obs', choices = unique(obs_df$Metabolite[order(obs_df$Metabolite)]) , server = TRUE, selected = "" )
-  updateSelectizeInput(session, 'protein_obs', choices = unique(c( obs_df$`Protein name` )[order(c( obs_df$`Protein name` )) ]), server = TRUE, selected = "" )
+  updateSelectizeInput(session, 'metabolite_obs', choices = metabolite_obs_str , server = TRUE, selected = "" )
+  updateSelectizeInput(session, 'protein_obs', choices = protein_obs_str, server = TRUE, selected = "" )
   
   
   
@@ -830,7 +817,15 @@ server <- function(input, output, session) {
                 highlight = TRUE,
                 defaultColDef = colDef(
                   align = "center",
-                  headerStyle = list(background = "#f7f7f8")
+                  headerStyle = list(background = "#f7f7f8"),
+                  style = JS("function(rowInfo, column, state) {
+                           // Highlight sorted columns
+                           for (let i = 0; i < state.sorted.length; i++) {
+                                  if (state.sorted[i].id === column.id) { 
+                                   return { background: 'rgba(0, 0, 0, 0.03)' }
+                                                                    }
+                                                                  }
+                                                                }")
                 ),
                 columns = list(
                   `UniProt ID` = colDef(minWidth = 50),
@@ -878,7 +873,15 @@ server <- function(input, output, session) {
                 highlight = TRUE,
                 defaultColDef = colDef(
                   align = "center",
-                  headerStyle = list(background = "#f7f7f8")
+                  headerStyle = list(background = "#f7f7f8"),
+                  style = JS("function(rowInfo, column, state) {
+                           // Highlight sorted columns
+                           for (let i = 0; i < state.sorted.length; i++) {
+                                  if (state.sorted[i].id === column.id) { 
+                                   return { background: 'rgba(0, 0, 0, 0.03)' }
+                                                                    }
+                                                                  }
+                                                                }")
                 ),
                 defaultPageSize = 5,
                 showPageSizeOptions = TRUE,
@@ -902,7 +905,15 @@ server <- function(input, output, session) {
                 highlight = TRUE,
                 defaultColDef = colDef(
                   align = "center",
-                  headerStyle = list(background = "#f7f7f8")
+                  headerStyle = list(background = "#f7f7f8"),
+                  style = JS("function(rowInfo, column, state) {
+                           // Highlight sorted columns
+                           for (let i = 0; i < state.sorted.length; i++) {
+                                  if (state.sorted[i].id === column.id) { 
+                                   return { background: 'rgba(0, 0, 0, 0.03)' }
+                                                                    }
+                                                                  }
+                                                                }")
                 ),
                 defaultPageSize = 5,
                 showPageSizeOptions = TRUE,
@@ -1075,8 +1086,8 @@ server <- function(input, output, session) {
   
   
   # Selection boxes----
-  updateSelectizeInput(session, 'metabolite_mr', choices = unique(mr_df$Metabolite[order(mr_df$Metabolite)]) , server = TRUE, selected = "" )
-  updateSelectizeInput(session, 'protein_mr', choices = unique(c(mr_df$`Protein abbreviation`, mr_df$`Protein name`)[order(c(mr_df$`Protein abbreviation`, mr_df$`Protein name`)) ]), server = TRUE, selected = "" )
+  updateSelectizeInput(session, 'metabolite_mr', choices = metabolite_mr_str , server = TRUE, selected = "" )
+  updateSelectizeInput(session, 'protein_mr', choices = protein_mr_str, server = TRUE, selected = "" )
   
   
   
@@ -1194,7 +1205,15 @@ server <- function(input, output, session) {
                 highlight = TRUE,
                 defaultColDef = colDef(
                   align = "center",
-                  headerStyle = list(background = "#f7f7f8")
+                  headerStyle = list(background = "#f7f7f8"),
+                  style = JS("function(rowInfo, column, state) {
+                           // Highlight sorted columns
+                           for (let i = 0; i < state.sorted.length; i++) {
+                                  if (state.sorted[i].id === column.id) { 
+                                   return { background: 'rgba(0, 0, 0, 0.03)' }
+                                                                    }
+                                                                  }
+                                                                }")
                 ),
                 columns = list(
                   Beta = colDef( minWidth = 50,
@@ -1233,7 +1252,15 @@ server <- function(input, output, session) {
                 highlight = TRUE,
                 defaultColDef = colDef(
                   align = "center",
-                  headerStyle = list(background = "#f7f7f8")
+                  headerStyle = list(background = "#f7f7f8"),
+                  style = JS("function(rowInfo, column, state) {
+                           // Highlight sorted columns
+                           for (let i = 0; i < state.sorted.length; i++) {
+                                  if (state.sorted[i].id === column.id) { 
+                                   return { background: 'rgba(0, 0, 0, 0.03)' }
+                                                                    }
+                                                                  }
+                                                                }")
                 ),
                 columns = list(
                   `Effect allele frequency` = colDef(cell = function(value) format(value, digits = 2, scientific = FALSE ) ),
@@ -1273,7 +1300,15 @@ server <- function(input, output, session) {
                 highlight = TRUE,
                 defaultColDef = colDef(
                   align = "center",
-                  headerStyle = list(background = "#f7f7f8")
+                  headerStyle = list(background = "#f7f7f8"),
+                  style = JS("function(rowInfo, column, state) {
+                           // Highlight sorted columns
+                           for (let i = 0; i < state.sorted.length; i++) {
+                                  if (state.sorted[i].id === column.id) { 
+                                   return { background: 'rgba(0, 0, 0, 0.03)' }
+                                                                    }
+                                                                  }
+                                                                }")
                 ),                ,
                 defaultPageSize = 5,
                 showPageSizeOptions = TRUE,
@@ -1443,8 +1478,8 @@ server <- function(input, output, session) {
   
   
   
-  updateSelectizeInput(session, 'pathway_obs_plot', choices = c( unique(obs_df$`Super pathway`[order(obs_df$`Super pathway`)]), unique(obs_df$`Sub pathway`[order(obs_df$`Sub pathway`)]) ), server = TRUE, selected = "" )
-  updateSelectizeInput(session, 'protein_obs_plot', choices = unique(c(obs_df$`Protein abbreviation`, obs_df$`Protein name`)[order(c(obs_df$`Protein abbreviation`, obs_df$`Protein name`)) ]), server = TRUE, selected = "" )
+  updateSelectizeInput(session, 'pathway_obs_plot', choices = pathway_obs_plot_str, server = TRUE, selected = "" )
+  updateSelectizeInput(session, 'protein_obs_plot', choices = protein_obs_plot_str, server = TRUE, selected = "" )
   
   
   
@@ -1881,8 +1916,8 @@ server <- function(input, output, session) {
   
   
   
-  updateSelectizeInput(session, 'pathway_mr_plot', choices = c( unique(mr_df$`Super pathway`[order(mr_df$`Super pathway`)]), unique(mr_df$`Sub pathway`[order(mr_df$`Sub pathway`)]) ), server = TRUE, selected = "" )
-  updateSelectizeInput(session, 'protein_mr_plot', choices = unique(c(mr_df$`Protein abbreviation`, mr_df$`Protein name`)[order(c(mr_df$`Protein abbreviation`, mr_df$`Protein name`)) ]), server = TRUE, selected = "" )
+  updateSelectizeInput(session, 'pathway_mr_plot', choices = pathway_obs_plot_str, server = TRUE, selected = "" ) # pathway_obs_plot_str and pathway_mr_plot_str are identical
+  updateSelectizeInput(session, 'protein_mr_plot', choices = protein_mr_str, server = TRUE, selected = "" ) # protein_mr_str and protein_mr_plot_str are identical
   
   
   
@@ -2301,7 +2336,15 @@ server <- function(input, output, session) {
               defaultColDef = colDef(
                 # cell = function(value) format(value, nsmall = 1),
                 align = "center",
-                headerStyle = list(background = "#f7f7f8")
+                headerStyle = list(background = "#f7f7f8"),
+                style = JS("function(rowInfo, column, state) {
+                           // Highlight sorted columns
+                           for (let i = 0; i < state.sorted.length; i++) {
+                                  if (state.sorted[i].id === column.id) { 
+                                   return { background: 'rgba(0, 0, 0, 0.03)' }
+                                                                    }
+                                                                  }
+                                                                }")
               ),
               defaultPageSize = 5,
               showPageSizeOptions = TRUE,
@@ -2330,7 +2373,15 @@ server <- function(input, output, session) {
               defaultColDef = colDef(
                 # cell = function(value) format(value, nsmall = 1),
                 align = "center",
-                headerStyle = list(background = "#f7f7f8")
+                headerStyle = list(background = "#f7f7f8"),
+                style = JS("function(rowInfo, column, state) {
+                           // Highlight sorted columns
+                           for (let i = 0; i < state.sorted.length; i++) {
+                                  if (state.sorted[i].id === column.id) { 
+                                   return { background: 'rgba(0, 0, 0, 0.03)' }
+                                                                    }
+                                                                  }
+                                                                }")
               ),
               columns = list(
                 `Effect allele frequency` = colDef(cell = function(value) format(value, digits = 2, scientific = FALSE ) ),
@@ -2375,7 +2426,15 @@ server <- function(input, output, session) {
               defaultColDef = colDef(
                 # cell = function(value) format(value, nsmall = 1),
                 align = "center",
-                headerStyle = list(background = "#f7f7f8")
+                headerStyle = list(background = "#f7f7f8"),
+                style = JS("function(rowInfo, column, state) {
+                           // Highlight sorted columns
+                           for (let i = 0; i < state.sorted.length; i++) {
+                                  if (state.sorted[i].id === column.id) { 
+                                   return { background: 'rgba(0, 0, 0, 0.03)' }
+                                                                    }
+                                                                  }
+                                                                }")
               ),
               defaultPageSize = 5,
               showPageSizeOptions = TRUE,
@@ -2405,7 +2464,15 @@ server <- function(input, output, session) {
               defaultColDef = colDef(
                 # cell = function(value) format(value, nsmall = 1),
                 align = "center",
-                headerStyle = list(background = "#f7f7f8")
+                headerStyle = list(background = "#f7f7f8"),
+                style = JS("function(rowInfo, column, state) {
+                           // Highlight sorted columns
+                           for (let i = 0; i < state.sorted.length; i++) {
+                                  if (state.sorted[i].id === column.id) { 
+                                   return { background: 'rgba(0, 0, 0, 0.03)' }
+                                                                    }
+                                                                  }
+                                                                }")
               ),
               defaultPageSize = 19,
               showPageSizeOptions = TRUE,
@@ -2432,16 +2499,19 @@ server <- function(input, output, session) {
   # Download Annex
   output$statFile <- downloadHandler(
     filename = function() {
-      paste("Annex1_", Sys.Date(), ".csv", sep = "")
+      paste("Annex1_", Sys.Date(), ".fst", sep = "")
     },
     content=function(file) {
-      file.copy("www/Proteomics_and_metabolomics_analyses_in_POEM.csv", file)
+      file.copy("www/Proteomics_and_metabolomics_analyses_in_POEM.fst", file)
     }
   )
   
   
   
 } # end server
+
+
+
 
 
 shinyApp(ui, server)
