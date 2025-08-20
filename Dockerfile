@@ -1,49 +1,51 @@
-# Base image with R and Shiny Server
 FROM rocker/shiny:4.4.1
 
 # Install system dependencies
 RUN apt-get update && \
-    apt-get upgrade -y && \
     apt-get install -y \
         git \
         libxml2-dev \
-        libmagick++-dev && \
+        libmagick++-dev \
+        curl && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Install 'remotes' for installing specific versions of CRAN packages
-RUN Rscript -e "install.packages('remotes', dependencies = TRUE)"
+# Create app directory
+WORKDIR /app
 
-# Install specific versions of CRAN packages (with dependencies = TRUE)
-RUN Rscript -e "remotes::install_version('shiny', version = '1.9.1', repos = 'https://cran.rstudio.com', dependencies = TRUE)" && \
-    Rscript -e "remotes::install_version('bslib', version = '0.8.0', repos = 'https://cran.rstudio.com', dependencies = TRUE)" && \
-    Rscript -e "remotes::install_version('reactable', version = '0.4.4', repos = 'https://cran.rstudio.com', dependencies = TRUE)" && \
-    Rscript -e "remotes::install_version('rio', version = '1.2.3', repos = 'https://cran.rstudio.com', dependencies = TRUE)" && \
-    Rscript -e "remotes::install_version('tidyverse', version = '2.0.0', repos = 'https://cran.rstudio.com', dependencies = TRUE)" && \
-    Rscript -e "remotes::install_version('shinyFeedback', version = '0.4.0', repos = 'https://cran.rstudio.com', dependencies = TRUE)" && \
-    Rscript -e "remotes::install_version('circlize', version = '0.4.16', repos = 'https://cran.rstudio.com', dependencies = TRUE)" && \
-    Rscript -e "remotes::install_version('fst', version = '0.9.18', repos = 'https://cran.rstudio.com', dependencies = TRUE)"
+# Copy your Shiny app code into the image
+COPY app/ /app/
 
-# Install Bioconductor and specific version of ComplexHeatmap
-RUN Rscript -e "install.packages('BiocManager', repos = 'https://cran.rstudio.com')" && \
-    Rscript -e "BiocManager::install('ComplexHeatmap', ask = FALSE, update = TRUE)"
+# Install renv
+RUN Rscript -e "install.packages('renv', repos = 'https://cran.rstudio.com')"
 
-# Clean previous app content and copy your Shiny app
-RUN rm -rf /srv/shiny-server/*
-COPY /app/ /srv/shiny-server/
+# Initialize renv and install required packages with pinned versions
+RUN Rscript -e "\
+  renv::init(bare = TRUE); \
+  renv::install('shiny@1.9.1'); \
+  renv::install('bslib@0.8.0'); \
+  renv::install('reactable@0.4.4'); \
+  renv::install('rio@1.2.3'); \
+  renv::install('tidyverse@2.0.0'); \
+  renv::install('shinyFeedback@0.4.0'); \
+  renv::install('circlize@0.4.16'); \
+  renv::install('fst@0.9.18'); \
+  renv::install('BiocManager'); \
+  BiocManager::install('ComplexHeatmap', ask = FALSE, update = TRUE); \
+  renv::snapshot(prompt = FALSE)"
 
-# Create app cache directory and set correct permissions
-RUN mkdir /srv/shiny-server/app_cache && \
-    chown -R shiny:shiny /srv/shiny-server/
+# Create cache directory and fix permissions
+RUN mkdir -p /app/app_cache && \
+    chown -R shiny:shiny /app
 
-# Declare a volume for persistent/shared storage
-VOLUME ["/srv/shiny-server/app_cache"]
+# Declare volume for shared/persistent app cache
+VOLUME ["/app/app_cache"]
 
-# Use the non-root 'shiny' user
+# Use non-root user for security
 USER shiny
 
-# Expose default Shiny port
+# Expose Shiny port
 EXPOSE 3838
 
-# Start Shiny server
+# Launch the Shiny server
 CMD ["/usr/bin/shiny-server"]
