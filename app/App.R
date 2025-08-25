@@ -24,7 +24,7 @@ library(fst) # 0.9.18
 # Load data----
 load("Annotations_description_menus.Rdata")
 mr_df <- fst::read_fst("MendelianRandomization_data.fst")
-annex <- fst::read_fst("www/Proteomics_and_metabolomics_analyses_in_POEM.fst")
+# annex <- fst::read_fst("www/Proteomics_and_metabolomics_analyses_in_POEM.fst")
 
 
 
